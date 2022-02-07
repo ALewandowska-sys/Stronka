@@ -73,6 +73,10 @@ a.menu:hover{
 .home{
     display: none;
 }
+
+
+/*-----------------------na telefon-------------------*/
+
 @media (max-width: 800px){
     nav{
         background: #D3C4C5;
@@ -85,7 +89,7 @@ a.menu:hover{
         border-radius: 50%;
         position: fixed;
         display: flex;
-        bottom: 10%;
+        bottom: 17%;
         right: 10%;
     }
     header span{
@@ -94,13 +98,24 @@ a.menu:hover{
     header a{
         display: none;
     }
+    #interior{
+        margin: 0;
+    }
     .left, .right{
         display: none;
     }
     .onas img{
         display: none;
     }
+    .circle{
+        display: none;
+    }
+    .wstawka{
+        display: block;
+        bottom: 15%;
+    }
 }
+
 /*-----------------------wizytowka-------------------*/
 
 header {
@@ -138,14 +153,12 @@ a:link{
     color: #5F3915;
     text-decoration: none;
 }
-
 hr{
     background-color: #A6878A;
     width: 50%;
     height: 2px;
     margin-bottom: 5%;
 }
-
 section{
     color: #636161;
     padding-top: 10%;
