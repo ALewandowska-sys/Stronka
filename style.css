@@ -98,9 +98,6 @@ a.menu:hover{
     header a{
         display: none;
     }
-    #interior{
-        margin: 0;
-    }
     .left, .right{
         display: none;
     }
