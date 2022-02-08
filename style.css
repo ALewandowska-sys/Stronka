@@ -178,8 +178,12 @@ section{
 .komentarze p{
     display: inline-block;
 }
-.cos p{
+.komentarze img{
     display: flex;
+	justify-content: center;
+}
+.cos p{
+    display: inline-flex;
     align-items: center;
     font-size: 18px;
     margin-left: 10%;
