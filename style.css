@@ -91,6 +91,9 @@ a.menu:hover{
         bottom: 17%;
         right: 10%;
     }
+    header a{
+        display: none;
+    }
     header span{
         text-align: center;
     }
@@ -104,6 +107,9 @@ a.menu:hover{
         display: none;
     }
     .wstawka{
+        display: none;
+    }
+    .kwiatki{
         display: none;
     }
 }
