@@ -169,7 +169,7 @@ section{
 .kwiatki{
     position: absolute;
     z-index: -1;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 .kwiatki img{
     width: 120px;
@@ -178,18 +178,21 @@ section{
 .kwiatekL{
     display: flex;
     flex-direction: column;
-    margin-top: 190%;
+    margin-top: 200%;
+    margin-left: 10%;
 }
 .kwiatekP{
     display: flex;
     flex-direction: column;
     margin-top: 40%;
-    margin-left: 900%;
+    margin-left: 1100%;
 }
 
 /*-----------------------wnetrze-------------------*/
 
-
+.polecane{
+    max-width: 80%;
+}
 .polecane span{
     text-align: center;
     display: inline-block;
