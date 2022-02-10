@@ -4,10 +4,9 @@
 body{
     min-height: 100%;
     position:relative;
-    width: 100%;
+    max-width: 100%;
 }
 #interior{
-    margin: auto 10%;
     text-align: center;
 }
 
@@ -15,13 +14,13 @@ body{
 /*-----------------------menu-------------------*/
 
 nav{
-    background-image: linear-gradient(to left, #C1ABAD, transparent);
-    align-items: center;
-    width: 100%;
-    top: 0;
     display: flex;
     position: fixed;
+    background-image: linear-gradient(to left, #C1ABAD, transparent);
+    width: 100%;
+    top: 0;
     justify-content: flex-end;
+    align-items: center;
     z-index: 5;
 }
 nav a{
@@ -80,7 +79,7 @@ a.menu:hover{
 @media (max-width: 800px){
     nav{
         background: #D3C4C5;
-        justify-content: center;
+        justify-content: space-around;
     }
     .home{
         z-index: 2;
@@ -108,8 +107,7 @@ a.menu:hover{
         display: none;
     }
     .wstawka{
-        display: block;
-        bottom: 15%;
+        display: none;
     }
 }
 
@@ -140,6 +138,7 @@ header a{
 
 /*-----------------------ogolne zalozenia w body-------------------*/
 
+
 img{
     border-radius: 25%;
 }
@@ -155,9 +154,11 @@ hr{
     width: 50%;
     height: 2px;
     margin-bottom: 5%;
+    min-width: 250px;
 }
 section{
     color: #636161;
+    display: block;
     padding-top: 10%;
     z-index: 3;
 }
@@ -165,6 +166,11 @@ section{
 
 /*-----------------------wnetrze-------------------*/
 
+.kwiatek{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
 .polecane span{
     text-align: center;
     display: inline-block;
@@ -201,26 +207,27 @@ section{
 
 form{
     text-align: left;
-    margin-left: 20%;
 }
 input, textarea{
-    width: 70%;
+    min-width: 50%;
     min-height: 2rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
-.kontakt ul{
-    list-style-type: none;
+label{
+    margin-left: 25%;
+}
+.kontakt {
     line-height: 2rem;
-    padding-left: 4%;
     font-size: 20px;
 }
 .button{
-    width: 5rem;
+    min-width: 4.5rem;
     height: 2.5rem;
     background-color: #F1E1DA;
     border-radius: 30%;
-    right: 35%;
-    position: absolute;
+    justify-content: center;
     font-size: 15px;
 }
 .button:hover{
@@ -276,6 +283,7 @@ input:hover, textarea:hover{
     
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: left;
     font-size: 18px;
 }
