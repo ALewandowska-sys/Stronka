@@ -171,7 +171,6 @@ section{
 .kwiatki{
     position: absolute;
     z-index: -1;
-    margin-top: 15%;
 }
 .kwiatki img{
     width: 120px;
@@ -180,13 +179,13 @@ section{
 .kwiatekL{
     display: flex;
     flex-direction: column;
-    margin-top: 200%;
+    margin-top: 180%;
     margin-left: 10%;
 }
 .kwiatekP{
     display: flex;
     flex-direction: column;
-    margin-top: 40%;
+    margin-top: 120%;
     margin-left: 1100%;
 }
 
