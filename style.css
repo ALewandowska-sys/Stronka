@@ -123,8 +123,7 @@ header span{
     z-index: 2;
 }
 header a{
-     margin: auto 10%; 
-    z-index: -1;
+    margin: auto 10%;
 }
 .hr1{
     width: 100%;
@@ -358,7 +357,6 @@ input:hover, textarea:hover{
 /*-----------------------dol-------------------*/
 
 footer{
-    z-index: -1;
     width: 100%;
     position: relative;
     margin: 180px 0 20px 0;
