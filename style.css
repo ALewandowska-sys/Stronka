@@ -318,39 +318,39 @@ input:hover, textarea:hover{
     font-size: 20px;
     padding-bottom: 10px;
 }
-.circle1{
-    background-color: #E7E1DF;
-    width: 420px;
-    height: 400px;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-clip-path: inset(0 0 0 200px);
-    z-index: -1;
-    left: -200px;
-}
-.circle2{
-    background-color: #E7E1DF;
-    width: 420px;
-    height: 400px;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-clip-path: inset(0 200px 0 0);
-    z-index: -1;
-    right: -200px;
-}
 .produkty ul{
+    background-color: #E7E1DF;
+    padding: 20px;
     line-height: 1.5rem;
     position: absolute;
     z-index: 2;
     margin-top: 8%;
-    list-style: circle;
+    list-style: none;
     list-style-position: inside;
 }
-.zapachys, .dodatkik{
-    left: 4%;
+.zapachy{
+    text-align: left;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
-.zapachyk, .dodatkis{
-    right: 5%;
+.dodatki{
+    text-align: right;
+    right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.gallery {
+    margin: 10px 40px;
+}
+.gallery img {
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    padding: 5px;
+}    
+.gallery img:hover {
+    filter: drop-shadow(4px 4px 6px gray);
+    transform: scale(1.1);
 }
 
 /*-----------------------dol-------------------*/
