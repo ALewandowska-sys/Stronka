@@ -169,12 +169,14 @@ section{
 /*-----------------------tlo (kwiatki)-------------------*/
 
 .kwiatekL{
+    opacity: 0.5;
     display: flex;
     position: absolute;
     z-index: -1;
     left: 10px;
 }
 .kwiatekP{
+    opacity: 0.5;
     display: flex;
     position: absolute;
     z-index: -1;
