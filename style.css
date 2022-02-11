@@ -168,25 +168,17 @@ section{
 
 /*-----------------------tlo (kwiatki)-------------------*/
 
-.kwiatki{
-    position: absolute;
-    z-index: -1;
-}
-.kwiatki img{
-    width: 120px;
-    height: 120px;
-}
 .kwiatekL{
     display: flex;
-    flex-direction: column;
-    margin-top: 180%;
-    margin-left: 10%;
+    position: absolute;
+    z-index: -1;
+    left: 10px;
 }
 .kwiatekP{
     display: flex;
-    flex-direction: column;
-    margin-top: 120%;
-    margin-left: 1100%;
+    position: absolute;
+    z-index: -1;
+    right: 10px;
 }
 
 /*-----------------------wnetrze-------------------*/
