@@ -29,7 +29,8 @@ nav a{
 }
 .menu{
     margin: 0;
-    padding: .25rem 3rem;
+    min-width: 50px;
+    padding: .25rem 2.5rem;
 }
 .dropdown{
     margin: 0;
@@ -37,7 +38,7 @@ nav a{
 }
 .dropdown ul{
     background-color: #D3C4C5;
-    opacity: .7;
+    opacity: .85;
     list-style-type: none;
     margin-top: .25rem;
     width: 10rem;
@@ -78,7 +79,8 @@ a.menu:hover{
 
 @media (max-width: 800px){
     nav{
-        background: #D3C4C5;
+        background-color: #D3C4C5;
+        opacity: .9;
         justify-content: space-around;
     }
     .home{
@@ -91,26 +93,14 @@ a.menu:hover{
         bottom: 17%;
         right: 10%;
     }
-    header a{
-        display: none;
-    }
     header span{
         text-align: center;
     }
-    .left, .right{
+    header a, .left, .right, .wstawka, .kwiatki, .circle, .onas img{
         display: none;
     }
-    .onas img{
-        display: none;
-    }
-    .circle{
-        display: none;
-    }
-    .wstawka{
-        display: none;
-    }
-    .kwiatki{
-        display: none;
+    .produkty{
+        margin: 0;
     }
 }
 
@@ -310,26 +300,39 @@ input:hover, textarea:hover{
 
 /*-----------------------produkty-------------------*/
 
-.produkty section{
-    padding-bottom: 500px;
-    padding-top: 0;
+.prodykty hr{
+    margin-bottom: 10%;
 }
-.produkty p{
+.produkty section{
+    width: 60%;
+    text-align: left;
+    padding: 0 110px 15% 110px;
+}
+.zapachy p, .dodatki p{
     font-size: 20px;
     padding-bottom: 10px;
 }
-.produkty ul{
+.produkty section ul{
+    list-style: circle;
+    padding-top: 5%;
+    font-size: 18px;
+    line-height: 2rem;
+}
+.produkty h2{
+    margin-bottom: 2rem;
+}
+.zapachy, .dodatki{
     background-color: #E7E1DF;
     padding: 20px;
     line-height: 1.5rem;
     position: absolute;
+    list-style: none;
+    text-align: left;
     z-index: 2;
     margin-top: 8%;
-    list-style: none;
     list-style-position: inside;
 }
 .zapachy{
-    text-align: left;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
@@ -339,8 +342,17 @@ input:hover, textarea:hover{
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
+.produkty span{
+    display: inline-block;
+    margin-left: 3%;
+    font-style: italic;
+    font-size: 20px;
+    max-width: 50%;
+}
 .gallery {
-    margin: 10px 40px;
+    margin: 3%;
+    display: inline-block;
+    max-width: 350px;
 }
 .gallery img {
     width: 100px;
