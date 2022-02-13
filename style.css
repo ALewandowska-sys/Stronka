@@ -29,8 +29,6 @@ nav a{
 }
 .menu{
     margin: 0;
-    min-width: 50px;
-    padding: .25rem 2.5rem;
 }
 .dropdown{
     margin: 0;
@@ -76,12 +74,36 @@ a.menu:hover{
 
 
 /*-----------------------na telefon-------------------*/
+@media (min-width: 800px){
+    .menu{
+        padding: .25rem 3rem;
+    }
+    .produkty section{
+        width: 60%;
+        padding: 0 110px 15% 110px;
+    }
+    .onas p{
+        width: 40%;
+        text-align: left;
+        font-size: 18px;
+        display: inline-block;
+    }
+    .onas img{
+        display: inline-block;
+    }
+    .produkty span{
+        max-width: 50%;
+    }
+}
 
 @media (max-width: 800px){
     nav{
         background-color: #D3C4C5;
         opacity: .9;
         justify-content: space-around;
+    }
+    .menu, .menu{
+        padding: .25rem 2rem;
     }
     .home{
         z-index: 2;
@@ -96,11 +118,23 @@ a.menu:hover{
     header span{
         text-align: center;
     }
-    header a, .left, .right, .wstawka, .kwiatki, .circle, .onas img{
+    header a, .left, .right, .wstawka, .kwiatki, .circle{
         display: none;
     }
     .produkty{
         margin: 0;
+    } 
+    .produkty span{
+        max-width: 100%;
+        text-align: center;
+    }
+    .onas p{
+        text-align: left;
+        font-size: 18px;
+    }   
+    .produkty section{
+        width: 100%;
+        padding: 0;
     }
 }
 
@@ -286,27 +320,17 @@ input:hover, textarea:hover{
 
 /*-----------------------historia-------------------*/
 
-.onas p{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    font-size: 18px;
-}
 .onas img{
     margin: auto 5%;
 }
 
 /*-----------------------produkty-------------------*/
 
-.prodykty hr{
+.produkty hr{
     margin-bottom: 10%;
 }
 .produkty section{
-    width: 60%;
     text-align: left;
-    padding: 0 110px 15% 110px;
 }
 .zapachy p, .dodatki p{
     font-size: 20px;
@@ -344,10 +368,8 @@ input:hover, textarea:hover{
 }
 .produkty span{
     display: inline-block;
-    margin-left: 3%;
     font-style: italic;
     font-size: 20px;
-    max-width: 50%;
 }
 .gallery {
     margin: 3%;
