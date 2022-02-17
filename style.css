@@ -78,6 +78,9 @@ a.menu:hover{
     .menu{
         padding: .25rem 3rem;
     }
+    header img{
+        padding-right: 10%;
+    }
     .produkty section{
         width: 80%;
         padding: 0 110px 15% 110px;
@@ -115,10 +118,10 @@ a.menu:hover{
         bottom: 17%;
         right: 10%;
     }
-    header span{
-        text-align: center;
+    header img{
+        padding-right: 0;
     }
-    header a, .left, .right, .wstawka, .kwiatki, .circle{
+    .left, .right, .wstawka, .kwiatki, .circle{
         display: none;
     }
     .produkty{
@@ -159,7 +162,6 @@ header img{
     width: 200px; 
     height: 200px;
     margin: 0;
-    padding-right: 10%;
 }
 .hr1{
     width: 100%;
