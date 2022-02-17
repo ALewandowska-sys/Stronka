@@ -79,11 +79,11 @@ a.menu:hover{
         padding: .25rem 3rem;
     }
     .produkty section{
-        width: 60%;
+        width: 80%;
         padding: 0 110px 15% 110px;
     }
     .onas p{
-        width: 40%;
+        width: 50%;
         text-align: left;
         font-size: 18px;
         display: inline-block;
@@ -141,21 +141,25 @@ a.menu:hover{
 /*-----------------------wizytowka-------------------*/
 
 header {
-    margin: 30px 0 0 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    color: #5F3915;
+    margin-top: 30px;
 }
 header span{
     font-size: 80px; 
     margin-left: 0;
     z-index: 2;
+    margin: 0;
 }
 header a{
-    margin: auto 10%;
-    width: 200; 
-    height: 180;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5F3915;
+}
+header img{
+    width: 200px; 
+    height: 200px;
+    margin: 0;
+    padding-right: 10%;
 }
 .hr1{
     width: 100%;
@@ -189,6 +193,10 @@ section{
     display: block;
     padding-top: 10%;
     z-index: 3;
+    max-width: 1000px;
+}
+.polecane, .odAutora, .produkty{
+    max-width: 1000px;
 }
 
 
@@ -215,10 +223,10 @@ section{
 
 /*-----------------------wnetrze-------------------*/
 
-.polecane, .odAutora,{
-    max-width: 1000px;
-}
+
 .polecane span{
+    display: inline-block;
+    width: 200px;
     text-align: center;
     padding: 0 2% 30px 2%;
 }
