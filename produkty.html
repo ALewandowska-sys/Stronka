@@ -7,31 +7,36 @@
     <link rel="shortcut icon" href="zdj/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="lightbox2-2.11.3/dist/css/lightbox.min.css">
-    <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav>
-            <div class="dropdown">
-            <a class="menu active" href= "produkty.html">Produkty</a>
-                <ul>
-                <li><a href="produkty.html#swiece">Świece sojowe</a></li>
-                <li><a href="produkty.html#kule">Kule musujące</a></li>
-                <li><a href="produkty.html#mydla">Mydła</a></li>
-                <li><a href="produkty.html#kapiel">Sole i pudry</a></li>
-                <li><a href="produkty.html#wlosy">Do włosów</a></li>
-                <li><a href="produkty.html#zestawy">Zestawy</a></li>
-                <li><a href="produkty.html#inne">Inne</a></li>
-                </ul>
-            </div>
-            <a class="menu" href= "onas.html">O nas</a>
-            <a class="menu" href= "kontakt.html">Kontakt</a>
-        </nav>
         <header>
-                <a href="index.html"><img src="zdj/Logo.jpg" alt="Logo"/>
-                <span>Natural &#38 Relax</span></a> 
+            
+            <a href="index.html" class="name"><span>Natural &#38 Relax</span></a>
+            <nav>
+                <button class="home"><img src="zdj/add.png"/></button>
+                <div class="dropdown">
+                <a class="menu" href= "produkty.html">Produkty</a>
+                    <ul>
+                    <li><a href="produkty.html#swiece">Świece sojowe</a></li>
+                    <li><a href="produkty.html#kule">Kule musujące</a></li>
+                    <li><a href="produkty.html#mydla">Mydła</a></li>
+                    <li><a href="produkty.html#kapiel">Sole i pudry</a></li>
+                    <li><a href="produkty.html#wlosy">Do włosów</a></li>
+                    <li><a href="produkty.html#zestawy">Zestawy</a></li>
+                    <li><a href="produkty.html#inne">Inne</a></li>
+                    </ul>
+                </div>
+                <a class="menu" href= "onas.html">O nas</a>
+                <a class="menu" href= "kontakt.html">Kontakt</a>
+            </nav>
+            
         </header>
-    <hr class=hr1>
+    
+            <a href="index.html" class="namePhone"><span>Natural &#38 Relax</span><hr class="bighr"></a>    
+    
     <div id="interior">
         <section class="produkty">
             
@@ -76,144 +81,118 @@
                     <h1><i>Świece sojowe</i></h1><hr>
             <section id="swiece">
 
-                    <ul><h2>Świece sojowe w szkle</h2>
-
-            <li>Świeca w szklanym pucharku - 40 zł</li>
+            <button onclick="show('swieceWSzkle')">Świece sojowe w szkle</button><hr class="fullHr">
+                
+                <section id="swieceWSzkle">
+                <li>Świeca w szklanym pucharku 280 ml - 40 zł</li>
             <li>Świeca w szklanym słoiku 200 ml - 30 zł</li>
             <li>Świeca w szklanym słoiku 330 ml - 45 zł</li>
-            <li>Świeca w szklanym słoiku 350 ml - 48 zł</li></ul>
+            <li>Świeca w szklanym słoiku 350 ml - 48 zł</li>
+                    
         <div class="gallery">
-            <a href="zdj/produkty/swiece/sloik.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/sloik.jpg"></a>
-            <a href="zdj/produkty/swiece/sloik2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/sloik2.jpg"></a>
-            <a href="zdj/produkty/swiece/szklane.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/szklane.jpg"></a>
-            <a href="zdj/produkty/swiece/szklane2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/szklane2.jpg"></a>
-            <a href="zdj/produkty/swiece/pucharek.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/pucharek.jpg"></a>
-            <a href="zdj/produkty/swiece/pucharek1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/pucharek1.jpg"></a>
-</div> 
-                    <h4>Możliwość wyboru zapachu i dodatku</h4>
-                
-            <ul><h2>Świeca INHALA</h2>
-                    <li>Słoik 90 ml - 15 zł</li> 
-                    <li>Słoik 200 ml - 30 zł</li></ul>
+            <button id="prevBtn"><img src="zdj/left-arrow.png"></button>
+            <button id="nextBtn"><img src="zdj/right-arrow.png"></button>
+            <div class="slide">
+                <a href="zdj/produkty/swiece/pucharek1.jpg"><img src="zdj/produkty/swiece/JPEG/pucharek1.jpg" id="lastClone"></a>
+                <a href="zdj/produkty/swiece/sloik.jpg"><img src="zdj/produkty/swiece/JPEG/sloik.jpg"></a>
+                <a href="zdj/produkty/swiece/sloik2.jpg"><img src="zdj/produkty/swiece/JPEG/sloik2.jpg"></a>
+                <a href="zdj/produkty/swiece/szklane.jpg"><img src="zdj/produkty/swiece/JPEG/szklane.jpg"></a>
+                <a href="zdj/produkty/swiece/szklane2.jpg"><img src="zdj/produkty/swiece/JPEG/szklane2.jpg"></a>
+                <a href="zdj/produkty/swiece/pucharek.jpg"><img src="zdj/produkty/swiece/JPEG/pucharek.jpg"></a>
+                <a href="zdj/produkty/swiece/pucharek1.jpg"><img src="zdj/produkty/swiece/JPEG/pucharek1.jpg"></a>
+                <a href="zdj/produkty/swiece/sloik.jpg"><img src="zdj/produkty/swiece/JPEG/sloik.jpg" id="firstClone"></a>
+            </div>
+        </div> 
+            <li>Świeca INHALA 90 ml - 15 zł</li> 
+            <li>Świeca INHALA 200 ml - 30 zł</li>
          <div class="gallery">
-            <a href="zdj/produkty/swiece/inhala.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/inhala.jpg"></a>
-            <a href="zdj/produkty/swiece/inhala1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/inhala1.jpg"></a>
+            <a href="zdj/produkty/swiece/inhala.jpg"><img src="zdj/produkty/swiece/JPEG/inhala.jpg"></a>
+            <a href="zdj/produkty/swiece/inhala1.jpg"><img src="zdj/produkty/swiece/JPEG/inhala1.jpg"></a>
         </div> 
                 <span>"INHALA" oznacza "wdech" i jest to mieszanka mięty, eukaliptusa i lawendy. Umożliwi udrażnianie dróg oddechowych, ułatwi oddychanie oraz działa uspokajająco. Polecamy ją przy przeziębieniach!</span>
+                </section>
+                
 
-            <ul><h2>Świece sojowe wolnostojące</h2>
+            <button onclick="show('swieceWolnostojace')">Świece sojowe wolnostojące</button><hr class="fullHr">
+                <section id="swieceWolnostojace">
                     <li>Niedźwiedź - 41 zł</li>
                     <li>Słoń - 41 zł</li>
-                <li>Koń - 41 zł</li></ul>
+                <li>Koń - 41 zł</li>
         <div class="gallery">
-            <a href="zdj/produkty/swiece/niedzwiedz3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/niedzwiedz3.jpg"></a>
-            <a href="zdj/produkty/swiece/niedzwiedz4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/niedzwiedz4.jpg"></a>
-            <a href="zdj/produkty/swiece/niedzwiedz.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/niedzwiedz.jpg"></a>
-            <a href="zdj/produkty/swiece/niedzwiedz2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/niedzwiedz2.jpg"></a>
-            <a href="zdj/produkty/swiece/slon.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/slon.jpg"></a>
-            <a href="zdj/produkty/swiece/slon5.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/slon5.jpg"></a>
-            <a href="zdj/produkty/swiece/slon1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/slon1.jpg"></a>
-            <a href="zdj/produkty/swiece/kon.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kon.jpg"></a>
-            <a href="zdj/produkty/swiece/kon1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kon1.jpg"></a>
+            <a href="zdj/produkty/swiece/niedzwiedz3.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz3.jpg"></a>
+            <a href="zdj/produkty/swiece/niedzwiedz4.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz4.jpg"></a>
+            <a href="zdj/produkty/swiece/niedzwiedz.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz.jpg"></a>
+            <a href="zdj/produkty/swiece/niedzwiedz2.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz2.jpg"></a>
+            <a href="zdj/produkty/swiece/slon.jpg"><img src="zdj/produkty/swiece/JPEG/slon.jpg"></a>
+            <a href="zdj/produkty/swiece/slon5.jpg"><img src="zdj/produkty/swiece/JPEG/slon5.jpg"></a>
+            <a href="zdj/produkty/swiece/slon1.jpg"><img src="zdj/produkty/swiece/JPEG/slon1.jpg"></a>
+            <a href="zdj/produkty/swiece/kon.jpg"><img src="zdj/produkty/swiece/JPEG/kon.jpg"></a>
+            <a href="zdj/produkty/swiece/kon1.jpg"><img src="zdj/produkty/swiece/JPEG/kon1.jpg"></a>
         </div>
-                
-            <ul><li>Zakochani - 30 zł</li>
+                            
+            <li>Zakochani - 30 zł</li>
             <li>Marilyn - 30 zł</li> 
             <li>Martin - 35</li>             
             <li>Audrey - 35 zł </li>
             <li>Joe - 35 zł</li> 
             <li>Emily - 33 zł</li>  
             <li>Marilyn&#38Martin w zestawie - 50 zł</li>
-            <li>Andrey&#38Joe w zestawie - 55 zł</li></ul>
+            <li>Andrey&#38Joe w zestawie - 55 zł</li>
         <div class="gallery">
-            <a href="zdj/produkty/swiece/para3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/para3.jpg"></a>
-            <a href="zdj/produkty/swiece2/para.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/para2.jpg"></a>
-            <a href="zdj/produkty/swiece/para.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/para.jpg"></a>
-            <a href="zdj/produkty/swiece/kob.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kob.jpg"></a>
-            <a href="zdj/produkty/swiece/kob1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kob1.jpg"></a>
-            <a href="zdj/produkty/swiece/kob2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kob2.jpg"></a>
-            <a href="zdj/produkty/swiece/body2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/body2.jpg"></a>
-            <a href="zdj/produkty/swiece/body1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/body1.jpg"></a>
-            <a href="zdj/produkty/swiece/women.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/women.jpg"></a>
-            <a href="zdj/produkty/swiece/women1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/women1.jpg"></a>
-            <a href="zdj/produkty/swiece/men.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/men.jpg"></a>
-            <a href="zdj/produkty/swiece/men1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/men1.jpg"></a>
-            <a href="zdj/produkty/swiece/men3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/men3.jpg"></a>
-            <a href="zdj/produkty/swiece/bodyrazem.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/bodyrazem.jpg"></a>
+            <a href="zdj/produkty/swiece/para3.jpg"><img src="zdj/produkty/swiece/JPEG/para3.jpg"></a>
+            <a href="zdj/produkty/swiece2/para.jpg"><img src="zdj/produkty/swiece/JPEG/para2.jpg"></a>
+            <a href="zdj/produkty/swiece/para.jpg"><img src="zdj/produkty/swiece/JPEG/para.jpg"></a>
+            <a href="zdj/produkty/swiece/kob.jpg"><img src="zdj/produkty/swiece/JPEG/kob.jpg"></a>
+            <a href="zdj/produkty/swiece/kob1.jpg"><img src="zdj/produkty/swiece/JPEG/kob1.jpg"></a>
+            <a href="zdj/produkty/swiece/kob2.jpg"><img src="zdj/produkty/swiece/JPEG/kob2.jpg"></a>
+            <a href="zdj/produkty/swiece/body2.jpg"><img src="zdj/produkty/swiece/JPEG/body2.jpg"></a>
+            <a href="zdj/produkty/swiece/body1.jpg"><img src="zdj/produkty/swiece/JPEG/body1.jpg"></a>
+            <a href="zdj/produkty/swiece/women.jpg"><img src="zdj/produkty/swiece/JPEG/women.jpg"></a>
+            <a href="zdj/produkty/swiece/women1.jpg"><img src="zdj/produkty/swiece/JPEG/women1.jpg"></a>
+            <a href="zdj/produkty/swiece/men.jpg"><img src="zdj/produkty/swiece/JPEG/men.jpg"></a>
+            <a href="zdj/produkty/swiece/men1.jpg"><img src="zdj/produkty/swiece/JPEG/men1.jpg"></a>
+            <a href="zdj/produkty/swiece/men3.jpg"><img src="zdj/produkty/swiece/JPEG/men3.jpg"></a>
+            <a href="zdj/produkty/swiece/bodyrazem.jpg"><img src="zdj/produkty/swiece/JPEG/bodyrazem.jpg"></a>
         </div>  
                 <span>Świece body zaskakują swoimi detalami jak i samą popularnościa! Nagie ciało nie służy tylko do seksualności, a jest piękną i naturalną częścią życia. Nie ważne czy jeszcze nie jesteś Jego tak pewna jak Andrey czy Joe, albo może ktoś próbuje Ci wmówić, że Emily jest "niekształtna".Ważne, żeby się nie bać swojego ciała! </span>
-            <ul><li>Kaktus Kajtek - 15 zł</li>
+            <li>Kaktus Kajtek - 15 zł</li>
             <li>Rubi - 20 zł</li> 
             <li>Różyczka - 7 z</li>
             <li>Opona - 8 zł</li> 
             <li>Sowa - 10 zł</li> 
-            <li>Zając wielkanocny - 10 zł</li></ul>
+            <li>Zając wielkanocny - 10 zł</li>
         <div class="gallery">
-            <a href="zdj/produkty/swiece/kaktus1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kaktus1.jpg"></a>
-            <a href="zdj/produkty/swiece/kaktus.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/kaktus.jpg"></a>
-            <a href="zdj/produkty/swiece/c.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/c.jpg"></a>
-            <a href="zdj/produkty/swiece/c2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/c2.jpg"></a>
-            <a href="zdj/produkty/swiece/opony.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/opony.jpg"></a>
-            <a href="zdj/produkty/swiece/opona1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/opona1.jpg"></a>
-            <a href="zdj/produkty/swiece/krolik2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/krolik2.jpg"></a>
-            <a href="zdj/produkty/swiece/krolik3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/krolik3.jpg"></a>
-            <a href="zdj/produkty/swiece/krolik4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/krolik4.jpg"></a>
+            <a href="zdj/produkty/swiece/kaktus1.jpg"><img src="zdj/produkty/swiece/JPEG/kaktus1.jpg"></a>
+            <a href="zdj/produkty/swiece/kaktus.jpg"><img src="zdj/produkty/swiece/JPEG/kaktus.jpg"></a>
+            <a href="zdj/produkty/swiece/c.jpg"><img src="zdj/produkty/swiece/JPEG/c.jpg"></a>
+            <a href="zdj/produkty/swiece/c2.jpg"><img src="zdj/produkty/swiece/JPEG/c2.jpg"></a>
+            <a href="zdj/produkty/swiece/opony.jpg"><img src="zdj/produkty/swiece/JPEG/opony.jpg"></a>
+            <a href="zdj/produkty/swiece/opona1.jpg"><img src="zdj/produkty/swiece/JPEG/opona1.jpg"></a>
+            <a href="zdj/produkty/swiece/krolik2.jpg"><img src="zdj/produkty/swiece/JPEG/krolik2.jpg"></a>
+            <a href="zdj/produkty/swiece/krolik3.jpg"><img src="zdj/produkty/swiece/JPEG/krolik3.jpg"></a>
+            <a href="zdj/produkty/swiece/krolik4.jpg"><img src="zdj/produkty/swiece/JPEG/krolik4.jpg"></a>
         </div> 
                     <h4>Możliwość wyboru zapachu</h4>
                 
-            <ul><h2>Świece sojowe małe</h2>
-
-                <li>Tealighty - 1,50 zł</li></ul>   
+            </section>
+    
+            <button onclick="show('tealighty')">Tealighty</button><hr class="fullHr">
+            <section id="tealighty"><li>Tealighty - 1,50 zł</li>   
         <div class="gallery">
-            <a href="zdj/produkty/swiece/tealig.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
-            <a href="zdj/produkty/swiece/tealighty.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/tealighty.jpg"></a>
-            <a href="zdj/produkty/swiece/tealig.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
+            <a href="zdj/produkty/swiece/tealig.jpg"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
+            <a href="zdj/produkty/swiece/tealighty.jpg"><img src="zdj/produkty/swiece/JPEG/tealighty.jpg"></a>
+            <a href="zdj/produkty/swiece/tealig.jpg"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
                     </div>
-                <span>Czy wiesz, że w aromaterapii wykorzystuje się olejki eteryczne do poprawy psychicznego samopoczucia? Nawet mała świeczka jest w stanie wprowadzić Cię w relaks i lepsze samopoczucie</span>
+                <span>Czy wiesz, że w aromaterapii wykorzystuje się olejki eteryczne do poprawy psychicznego samopoczucia? Nawet mała świeczka jest w stanie wprowadzić Cię w relaks i lepsze samopoczucie</span></section>
                 
+            <button onclick="show('woski')">Woski do kominka</button><hr class="fullHr">
+            <section id="woski"><li>cos - 1,50 zł</li>   
+        <div class="gallery">
+            <a href="zdj/produkty/swiece/tealighty.jpg"><img src="zdj/produkty/swiece/JPEG/tealighty.jpg"></a>
+            <a href="zdj/produkty/swiece/tealig.jpg"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
+                    </div>
+                <span>Czy wiesz, że w aromaterapii wykorzystuje się olejki eteryczne do poprawy psychicznego samopoczucia? Nawet mała świeczka jest w stanie wprowadzić Cię w relaks i lepsze samopoczucie</span></section>
+              
                 </section>
             
                 <!--<ul class="zapachy"><p>Zapachy:</p>
@@ -269,30 +248,18 @@
                         <li>Małe serca 6 szt. - 10 zł</li> 
                     </ul>
         <div class="gallery">
-            <a href="zdj/produkty/kule/kula.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kula.jpg"></a>
-            <a href="zdj/produkty/kule/kula2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kula2.jpg"></a>
-            <a href="zdj/produkty/kule/kula3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kula3.jpg"></a>
-            <a href="zdj/produkty/kule/kuleS.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kuleS.jpg"></a>
-            <a href="zdj/produkty/kule/serc.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/serc.jpg"></a>
-            <a href="zdj/produkty/kule/serc2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/serc2.jpg"></a>
-            <a href="zdj/produkty/kule/serc3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/serc3.jpg"></a>
-            <a href="zdj/produkty/kule/serc4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/serc4.jpg"></a>
-            <a href="zdj/produkty/kule/serc6.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/serc6.jpg"></a>
-            <a href="zdj/produkty/kule/kwiatek.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kwiatek.jpg"></a>
-            <a href="zdj/produkty/kule/kwiatek1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kwiatek1.jpg"></a>
-            <a href="zdj/produkty/kule/kwitek1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/kule/JPEG/kwitek1.jpg"></a>
+            <a href="zdj/produkty/kule/kula.jpg"><img src="zdj/produkty/kule/JPEG/kula.jpg"></a>
+            <a href="zdj/produkty/kule/kula2.jpg"><img src="zdj/produkty/kule/JPEG/kula2.jpg"></a>
+            <a href="zdj/produkty/kule/kula3.jpg"><img src="zdj/produkty/kule/JPEG/kula3.jpg"></a>
+            <a href="zdj/produkty/kule/kuleS.jpg"><img src="zdj/produkty/kule/JPEG/kuleS.jpg"></a>
+            <a href="zdj/produkty/kule/serc.jpg"><img src="zdj/produkty/kule/JPEG/serc.jpg"></a>
+            <a href="zdj/produkty/kule/serc2.jpg"><img src="zdj/produkty/kule/JPEG/serc2.jpg"></a>
+            <a href="zdj/produkty/kule/serc3.jpg"><img src="zdj/produkty/kule/JPEG/serc3.jpg"></a>
+            <a href="zdj/produkty/kule/serc4.jpg"><img src="zdj/produkty/kule/JPEG/serc4.jpg"></a>
+            <a href="zdj/produkty/kule/serc6.jpg"><img src="zdj/produkty/kule/JPEG/serc6.jpg"></a>
+            <a href="zdj/produkty/kule/kwiatek.jpg"><img src="zdj/produkty/kule/JPEG/kwiatek.jpg"></a>
+            <a href="zdj/produkty/kule/kwiatek1.jpg"><img src="zdj/produkty/kule/JPEG/kwiatek1.jpg"></a>
+            <a href="zdj/produkty/kule/kwitek1.jpg"><img src="zdj/produkty/kule/JPEG/kwitek1.jpg"></a>
                     </div>
                 <p></p>
                 </section>
@@ -336,37 +303,26 @@
                     <ul>
                     <li>Mydło do masażu - 21 zł</li></ul>
                         <div class="gallery">
-            <a href="zdj/produkty/mydla/mas.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mas.jpg"></a>
-            <a href="zdj/produkty/mydla/mas1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mas1.jpg"></a>
-            <a href="zdj/produkty/mydla/mas2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mas2.jpg"></a>
-            <a href="zdj/produkty/mydla/mas4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mas4.jpg"></a>
-            <a href="zdj/produkty/mydla/mas5.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mas5.jpg"></a>
-            <a href="zdj/produkty/mydla/masujace.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/masujace.jpg"></a>
+            <a href="zdj/produkty/mydla/mas.jpg"><img src="zdj/produkty/mydla/JPEG/mas.jpg"></a>
+            <a href="zdj/produkty/mydla/mas1.jpg"><img src="zdj/produkty/mydla/JPEG/mas1.jpg"></a>
+            <a href="zdj/produkty/mydla/mas2.jpg"><img src="zdj/produkty/mydla/JPEG/mas2.jpg"></a>
+            <a href="zdj/produkty/mydla/mas4.jpg"><img src="zdj/produkty/mydla/JPEG/mas4.jpg"></a>
+            <a href="zdj/produkty/mydla/mas5.jpg"><img src="zdj/produkty/mydla/JPEG/mas5.jpg"></a>
+            <a href="zdj/produkty/mydla/masujace.jpg"><img src="zdj/produkty/mydla/JPEG/masujace.jpg"></a>
                     </div>
                         <ul><li>Mydło do rąk duże - 14 zł</li>
                         <li>Mydło do rąk małe - 9 zł</li></ul>
                         <div class="gallery">
-            <a href="zdj/produkty/mydla/mydla1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mydla1.jpg"></a>
-            <a href="zdj/produkty/mydla/mydla2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mydla2.jpg"></a>
+            <a href="zdj/produkty/mydla/mydla1.jpg"><img src="zdj/produkty/mydla/JPEG/mydla1.jpg"></a>
+            <a href="zdj/produkty/mydla/mydla2.jpg"><img src="zdj/produkty/mydla/JPEG/mydla2.jpg"></a>
                     </div>
                         <ul><li>Mydlaną babeczka - 10 zł</li>
                         <li>Mydlane muffiny - 15 zł</li>
                         <li>3 sztuki mydlanych muffin - 35 zł</li></ul>
                         <div class="gallery">
-            <a href="zdj/produkty/mydla/bab.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/bab.jpg"></a>
-            <a href="zdj/produkty/mydla/bab1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/bab1.jpg"></a>
-            <a href="zdj/produkty/mydla/bab3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/bab3.jpg"></a>
+            <a href="zdj/produkty/mydla/bab.jpg"><img src="zdj/produkty/mydla/JPEG/bab.jpg"></a>
+            <a href="zdj/produkty/mydla/bab1.jpg"><img src="zdj/produkty/mydla/JPEG/bab1.jpg"></a>
+            <a href="zdj/produkty/mydla/bab3.jpg"><img src="zdj/produkty/mydla/JPEG/bab3.jpg"></a>
                     </div>
                         <ul><li>Mydło miś 13 zł</li>
                         <li>Mydło serce 8 zł</li>
@@ -374,27 +330,18 @@
                         <li>Miś Antek 10</li>
                         <li>Lovka 18 zł</li></ul>
                         <div class="gallery">
-            <a href="zdj/produkty/mydla/mis.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mis.jpg"></a>
-            <a href="zdj/produkty/mydla/mis2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mis2.jpg"></a>
-            <a href="zdj/produkty/mydla/1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/1.jpg"></a>
+            <a href="zdj/produkty/mydla/mis.jpg"><img src="zdj/produkty/mydla/JPEG/mis.jpg"></a>
+            <a href="zdj/produkty/mydla/mis2.jpg"><img src="zdj/produkty/mydla/JPEG/mis2.jpg"></a>
+            <a href="zdj/produkty/mydla/1.jpg"><img src="zdj/produkty/mydla/JPEG/1.jpg"></a>
                     </div>
                         <ul><li>Mini mydełko 1 zł</li></ul>
                         <div class="gallery">
-            <a href="zdj/produkty/mydla/mini.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mini.jpg"></a>
-            <a href="zdj/produkty/mydla/mini1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mini1.jpg"></a>
-            <a href="zdj/produkty/mydla/mini3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mini3.jpg"></a>
-            <a href="zdj/produkty/mydla/mini4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mini4.jpg"></a>
-            <a href="zdj/produkty/mydla/mini5.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mini5.jpg"></a>
-            <a href="zdj/produkty/mydla/mino5.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/mydla/JPEG/mino5.jpg"></a>
+            <a href="zdj/produkty/mydla/mini.jpg"><img src="zdj/produkty/mydla/JPEG/mini.jpg"></a>
+            <a href="zdj/produkty/mydla/mini1.jpg"><img src="zdj/produkty/mydla/JPEG/mini1.jpg"></a>
+            <a href="zdj/produkty/mydla/mini3.jpg"><img src="zdj/produkty/mydla/JPEG/mini3.jpg"></a>
+            <a href="zdj/produkty/mydla/mini4.jpg"><img src="zdj/produkty/mydla/JPEG/mini4.jpg"></a>
+            <a href="zdj/produkty/mydla/mini5.jpg"><img src="zdj/produkty/mydla/JPEG/mini5.jpg"></a>
+            <a href="zdj/produkty/mydla/mino5.jpg"><img src="zdj/produkty/mydla/JPEG/mino5.jpg"></a>
                     </div>
                     <p>
     Serduszka małe 3 szt 6 zł
@@ -427,7 +374,7 @@
                         <li>Wiórki kokosowe</li></ul>-->
                     <h1><i>Sole i pudry</i></h1><hr>
             <section id="kapiel">
-                    <ul>
+                
                     <li>Sól do kąpieli 50 g (w szklanej probówce) - 5 zł</li>
                     <li>Sól do kąpieli 100 g (w papierowej torebce) - 7 zł</li>
                     <li>Sól do kąpieli 150 g (w szklanej butelce) - 15 zł</li>
@@ -435,34 +382,24 @@
                     <li>Puder do kąpieli 150 g - 15 zł</li>
                     <li>Puder do kąpieli 100 g - 10 zł</li>
                     <li>Puder do kąpieli 50 g - 5 zł</li>
-                </ul>
                 <div class="gallery">
-            <a href="zdj/produkty/p+s/sol3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/sol3.jpg"></a>
-            <a href="zdj/produkty/p+s/sol.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/sol.jpg"></a>
-            <a href="zdj/produkty/p+s/sol2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/sol2.jpg"></a>
-            <a href="zdj/produkty/p+s/sol4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/sol4.jpg"></a>
-            <a href="zdj/produkty/p+s/sol5.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/sol5.jpg"></a>
-            <a href="zdj/produkty/p+s/sol6.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/sol6.jpg"></a>
-            <a href="zdj/produkty/p+s/puder.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/puder.jpg"></a>
-            <a href="zdj/produkty/p+s/puder3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/puder3.jpg"></a>
-            <a href="zdj/produkty/p+s/puder2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/p+s/JPEG/puder2.jpg"></a>
+            <a href="zdj/produkty/p+s/sol3.jpg"><img src="zdj/produkty/p+s/JPEG/sol3.jpg"></a>
+            <a href="zdj/produkty/p+s/sol.jpg"><img src="zdj/produkty/p+s/JPEG/sol.jpg"></a>
+            <a href="zdj/produkty/p+s/sol2.jpg"><img src="zdj/produkty/p+s/JPEG/sol2.jpg"></a>
+            <a href="zdj/produkty/p+s/sol4.jpg"><img src="zdj/produkty/p+s/JPEG/sol4.jpg"></a>
+            <a href="zdj/produkty/p+s/sol5.jpg"><img src="zdj/produkty/p+s/JPEG/sol5.jpg"></a>
+            <a href="zdj/produkty/p+s/sol6.jpg"><img src="zdj/produkty/p+s/JPEG/sol6.jpg"></a>
+            <a href="zdj/produkty/p+s/puder.jpg"><img src="zdj/produkty/p+s/JPEG/puder.jpg"></a>
+            <a href="zdj/produkty/p+s/puder3.jpg"><img src="zdj/produkty/p+s/JPEG/puder3.jpg"></a>
+            <a href="zdj/produkty/p+s/puder2.jpg"><img src="zdj/produkty/p+s/JPEG/puder2.jpg"></a>
                     </div>
                 <span>Naturalna sól do kąpieli nie tylko pięknie pachnie i odpręża. Dzięki soli Himalajskiej oraz soli gorzkiej Epsom, wygładza skóre i redukuje celulit!</span><span>Puder do kąpieli jest to proszek na bazie mleka, który powoduje, że skóra staje się elastyczna, miękka i nawilżona. Dodatkowo białka mleka pobudzają produkcję kolagenu, dzięki czemu pomaga w redukcji rozstępów i zmarszczek.</span>
 </section>
             
                     <!--<ul class="zapachy"><p>Kolory opasek:</p>
                         <li></li></ul>
-                    <ul class="dodatki"><p>Materiały do frotek:</p>-->
-                        <li></li></ul>
+                    <ul class="dodatki"><p>Materiały do frotek:</p>
+                        <li></li></ul>-->
                     <h1><i>Artykuły do włosów</i></h1><hr>
             <section id="wlosy">
                     <ul>
@@ -470,22 +407,14 @@
                     <li>Frotka ze wskążką - 18 zł</li>
                     <li>Opaska - 20 zł</li></ul>
                     <div class="gallery">
-            <a href="zdj/produkty/wlosy/frotka.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/frotka.jpg"></a>
-            <a href="zdj/produkty/wlosy/wlosy.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/wlosy.jpg"></a>
-            <a href="zdj/produkty/wlosy/wlosy2.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/wlosy2.jpg"></a>
-            <a href="zdj/produkty/wlosy/wlosy3.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/wlosy3.jpg"></a>
-            <a href="zdj/produkty/wlosy/wlosy4.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/wlosy4.jpg"></a>
-            <a href="zdj/produkty/wlosy/wlosy5.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/wlosy5.jpg"></a>
-            <a href="zdj/produkty/wlosy/losy6.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/losy6.jpg"></a>
-            <a href="zdj/produkty/wlosy/opaski.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/wlosy/JPEG/opaski.jpg"></a></div>
+            <a href="zdj/produkty/wlosy/frotka.jpg"><img src="zdj/produkty/wlosy/JPEG/frotka.jpg"></a>
+            <a href="zdj/produkty/wlosy/wlosy.jpg"><img src="zdj/produkty/wlosy/JPEG/wlosy.jpg"></a>
+            <a href="zdj/produkty/wlosy/wlosy2.jpg"><img src="zdj/produkty/wlosy/JPEG/wlosy2.jpg"></a>
+            <a href="zdj/produkty/wlosy/wlosy3.jpg"><img src="zdj/produkty/wlosy/JPEG/wlosy3.jpg"></a>
+            <a href="zdj/produkty/wlosy/wlosy4.jpg"><img src="zdj/produkty/wlosy/JPEG/wlosy4.jpg"></a>
+            <a href="zdj/produkty/wlosy/wlosy5.jpg"><img src="zdj/produkty/wlosy/JPEG/wlosy5.jpg"></a>
+            <a href="zdj/produkty/wlosy/losy6.jpg"><img src="zdj/produkty/wlosy/JPEG/losy6.jpg"></a>
+            <a href="zdj/produkty/wlosy/opaski.jpg"><img src="zdj/produkty/wlosy/JPEG/opaski.jpg"></a></div>
                 <span></span>
                 </section>
             
@@ -493,24 +422,15 @@
             <section id="inne">
                 <ul><li>Drewniana podkładka - 20zł</li></ul>
                         <div class="gallery">
-            <a href="zdj/produkty/inne/duzo.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/duzo.jpg"></a>
-            <a href="zdj/produkty/inne/1.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/1.jpg"></a>
-            <a href="zdj/produkty/inne/cos.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/cos.jpg"></a>
-            <a href="zdj/produkty/inne/jasz.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/jasz.jpg"></a>
-            <a href="zdj/produkty/inne/kwiat.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/kwiat.jpg"></a>
-            <a href="zdj/produkty/inne/pajak.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/pajak.jpg"></a>
-            <a href="zdj/produkty/inne/pozdr.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/pozdr.jpg"></a>
-            <a href="zdj/produkty/inne/slon.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/slon.jpg"></a>
-            <a href="zdj/produkty/inne/wzor.jpg"
-               data-lightbox="mygallery"><img src="zdj/produkty/inne/JPEG/wzor.jpg"></a>
+            <a href="zdj/produkty/inne/duzo.jpg"><img src="zdj/produkty/inne/JPEG/duzo.jpg"></a>
+            <a href="zdj/produkty/inne/1.jpg"><img src="zdj/produkty/inne/JPEG/1.jpg"></a>
+            <a href="zdj/produkty/inne/cos.jpg"><img src="zdj/produkty/inne/JPEG/cos.jpg"></a>
+            <a href="zdj/produkty/inne/jasz.jpg"><img src="zdj/produkty/inne/JPEG/jasz.jpg"></a>
+            <a href="zdj/produkty/inne/kwiat.jpg"><img src="zdj/produkty/inne/JPEG/kwiat.jpg"></a>
+            <a href="zdj/produkty/inne/pajak.jpg"><img src="zdj/produkty/inne/JPEG/pajak.jpg"></a>
+            <a href="zdj/produkty/inne/pozdr.jpg"><img src="zdj/produkty/inne/JPEG/pozdr.jpg"></a>
+            <a href="zdj/produkty/inne/slon.jpg"><img src="zdj/produkty/inne/JPEG/slon.jpg"></a>
+            <a href="zdj/produkty/inne/wzor.jpg"><img src="zdj/produkty/inne/JPEG/wzor.jpg"></a>
                     </div>
                 <span>Niepowtarzalne podkładki pod kubek, są świetnym pomysłem na prezent. Sam wymyśl co chciałbyś na niej umieścić, a My szybko urzeczywistnimy Twoją wizję!</span>
             </section> 
@@ -520,15 +440,17 @@
                 <p>Już wkrótce...</p>
                 </section>
             
-    </div>
-        <footer>
+                </section>
             
+    </div>
+    
+    <footer>
                 <h2><b>Natural &#38 Relax</b></h2>
-        <p><br>
-                <a href="https://www.instagram.com/natural_and_relax/"><img src="zdj/instagram.png" alt="Instagram"  width="30" height="30" /></a>  
-                <a href="https://www.facebook.com/Natural-Relax-102603305206368/"><img src="zdj/facebook.png" alt="Facebook" width="30" height="30"/></a><br>
-        Email: <i><a href="mailto:natural_and_relax@wp.pl">natural_and_relax@wp.pl</a></i>
-        </p>
+                <a href="https://www.instagram.com/natural_and_relax/"><img src="zdj/instagram.png" alt="Instagram"/></a>
+                <a href="https://www.facebook.com/Natural-Relax-102603305206368/"><img src="zdj/facebook.png" alt="Facebook"/></a><br><b>Email: </b>
+                <i><a href="mailto:natural_and_relax@wp.pl">natural_and_relax@wp.pl</a></i>
+
         </footer>
+        <script src="app.js"></script>
 </body>
 </html>
