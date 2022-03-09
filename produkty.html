@@ -15,8 +15,7 @@
         <header>
             
             <a href="index.html" class="name"><span>Natural &#38 Relax</span></a>
-            <nav>
-                <button class="home"><img src="zdj/add.png"/></button>
+            <nav id="navigator">
                 <div class="dropdown">
                 <a class="menu" href= "produkty.html">Produkty</a>
                     <ul>
@@ -35,102 +34,515 @@
             
         </header>
     
-            <a href="index.html" class="namePhone"><span>Natural &#38 Relax</span><hr class="bighr"></a>    
+            <a href="index.html" class="namePhone"><span>Natural &#38 Relax</span><hr class="bighr"></a>
+    <button class="home" onclick="showMenu()"><img src="zdj/menu.png"/></button>
     
     <div id="interior">
         <section class="produkty">
             
-                <!--<ul class="zapachy"><p>Zapachy:</p>
-                    <li>Kawa</li>
-                    <li>Róża</li>
-                    <li>Pomarańcz</li>
-                    <li>Lawenda</li>
-                    <li>Mięta</li>
-                    <li>Czekolada</li>
-                    <li>Owoce leśne</li>
-                    <li>Cynamon</li>
-                    <li>Mangolia</li>
-                    <li>Jabłko-cynamon</li>
-                    <li>Zielone jabłuszko</li>
-                    <li>Słodki granat</li>
-                    <li>Dzewo sandałowe</li>
-                    <li>Kawa-czekolada</li>
-                    <li>Eukaliptus</li>
-                    <li>Czekolada</li>
-                    <li>Konwalia</li>
-                    <li>Piwonia</li>
-                    <li>Sosna</li>
-                    <li>Bez</li>
-                    <li>Frezja</li>
-            </ul>
-                <ul class="dodatki"><p>Dodatki:</p>
-                    <li>Susz kwiatowy</li>
-                    <li>Laska cynamonu</li>
-                    <li>Suszona pomarańcz</li>
-                    <li>Suszone jabłko</li>
-                    <li>Suszona cytryna</li>
-                    <li>Suszona lawenda</li>
-                    <li>Igiełki drzew iglastych</li>
-                    <li>Suszona mięta</li>
-                    <li>Ziarna kawy</li>
-                    <li>Cynamon</li>
-                    <li>Płatki róż</li>
-                    <li>Kakao</li>
-                    <li>Brokat</li>
-            </ul>-->
                     <h1><i>Świece sojowe</i></h1><hr>
             <section id="swiece">
-
-            <button onclick="show('swieceWSzkle')">Świece sojowe w szkle</button><hr class="fullHr">
+            <label onclick="show('swieceWSzkle', 1)" class="podgrupa">Świece sojowe w szkle</label><hr class="fullHr" id="1">
                 
                 <section id="swieceWSzkle">
-                <li>Świeca w szklanym pucharku 280 ml - 40 zł</li>
+                    <div class="cont">
+        <h1>Świeca w szklanym pucharku</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Pojemność: ml</label></div>
+                <div>
+            <label>Dodatek</label>
+            <select>
+                <option value="Susz kwiatowy">Susz kwiatowy</option>
+                <option value="Laska cynamonu">Laska cynamonu</option>
+                <option value="Suszona pomarańcz">Suszona pomarańcz</option>
+                <option value="Suszone jabłko">Suszone jabłko</option>
+                <option value="Suszona cytryna">Suszona cytryna</option>
+                <option value="Suszona lawenda">Suszona lawenda</option>
+                <option value="Igły świerkowe">Igły świerkowe</option>
+                <option value="Suszona mięta">Suszona mięta</option>
+                <option value="Ziarna kawy">Ziarna kawy</option>
+                <option value="Cynamon">Cynamon</option>
+                <option value="Płatki róż">Płatki róż</option>
+            </select>
+                </div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+                    <select>
+                    <option value="only1">-------</option>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option></select>
+            </div>
+            </form>
+        </div>
+    </div>
+                    <div class="cont">
+        <h1>Świeca w słoiku</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Pojemność: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="200ml">
+                <label for="Choice1">200ml</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="330ml">
+                <label for="Choice2">330ml</label>
+
+                <input type="radio" id="Choice3"
+                 name="size" value="350ml">
+                <label for="Choice3">350ml</label>
+                    </div>
+                <div>
+            <label>Dodatek</label>
+            <select>
+                <option value="Susz kwiatowy">Susz kwiatowy</option>
+                <option value="Laska cynamonu">Laska cynamonu</option>
+                <option value="Suszona pomarańcz">Suszona pomarańcz</option>
+                <option value="Suszone jabłko">Suszone jabłko</option>
+                <option value="Suszona cytryna">Suszona cytryna</option>
+                <option value="Suszona lawenda">Suszona lawenda</option>
+                <option value="Igły świerkowe">Igły świerkowe</option>
+                <option value="Suszona mięta">Suszona mięta</option>
+                <option value="Ziarna kawy">Ziarna kawy</option>
+                <option value="Cynamon">Cynamon</option>
+                <option value="Płatki róż">Płatki róż</option>
+            </select>
+                </div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+                    <select>
+                    <option value="only1">-------</option>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option></select>
+            </div>
+            </form>
+        </div>
+    </div>
+        
+    <div class="cont">
+        <h1>Świeca INHALA</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Pojemność: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="90ml">
+                <label for="Choice1">90ml</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="200ml">
+                <label for="Choice2">200ml</label>
+                    </div>
+                <div>
+                    <label>"INHALA" to mieszanka mięty, eukaliptusa i lawendy.</label>
+            </div>
+            </form>
+        </div>
+    </div>   
             <li>Świeca w szklanym słoiku 200 ml - 30 zł</li>
             <li>Świeca w szklanym słoiku 330 ml - 45 zł</li>
-            <li>Świeca w szklanym słoiku 350 ml - 48 zł</li>
-                    
-        <div class="gallery">
-            <button id="prevBtn"><img src="zdj/left-arrow.png"></button>
-            <button id="nextBtn"><img src="zdj/right-arrow.png"></button>
-            <div class="slide">
-                <a href="zdj/produkty/swiece/pucharek1.jpg"><img src="zdj/produkty/swiece/JPEG/pucharek1.jpg" id="lastClone"></a>
-                <a href="zdj/produkty/swiece/sloik.jpg"><img src="zdj/produkty/swiece/JPEG/sloik.jpg"></a>
-                <a href="zdj/produkty/swiece/sloik2.jpg"><img src="zdj/produkty/swiece/JPEG/sloik2.jpg"></a>
-                <a href="zdj/produkty/swiece/szklane.jpg"><img src="zdj/produkty/swiece/JPEG/szklane.jpg"></a>
-                <a href="zdj/produkty/swiece/szklane2.jpg"><img src="zdj/produkty/swiece/JPEG/szklane2.jpg"></a>
-                <a href="zdj/produkty/swiece/pucharek.jpg"><img src="zdj/produkty/swiece/JPEG/pucharek.jpg"></a>
-                <a href="zdj/produkty/swiece/pucharek1.jpg"><img src="zdj/produkty/swiece/JPEG/pucharek1.jpg"></a>
-                <a href="zdj/produkty/swiece/sloik.jpg"><img src="zdj/produkty/swiece/JPEG/sloik.jpg" id="firstClone"></a>
-            </div>
-        </div> 
+            <li>Świeca w szklanym słoiku 350 ml - 48 zł</li>       
             <li>Świeca INHALA 90 ml - 15 zł</li> 
             <li>Świeca INHALA 200 ml - 30 zł</li>
-         <div class="gallery">
-            <a href="zdj/produkty/swiece/inhala.jpg"><img src="zdj/produkty/swiece/JPEG/inhala.jpg"></a>
-            <a href="zdj/produkty/swiece/inhala1.jpg"><img src="zdj/produkty/swiece/JPEG/inhala1.jpg"></a>
-        </div> 
-                <span>"INHALA" oznacza "wdech" i jest to mieszanka mięty, eukaliptusa i lawendy. Umożliwi udrażnianie dróg oddechowych, ułatwi oddychanie oraz działa uspokajająco. Polecamy ją przy przeziębieniach!</span>
                 </section>
                 
 
-            <button onclick="show('swieceWolnostojace')">Świece sojowe wolnostojące</button><hr class="fullHr">
+            <label onclick="show('swieceWolnostojace', 2)" class="podgrupa">Świece sojowe wolnostojące</label><hr class="fullHr" id="2">
                 <section id="swieceWolnostojace">
-                    <li>Niedźwiedź - 41 zł</li>
-                    <li>Słoń - 41 zł</li>
-                <li>Koń - 41 zł</li>
-        <div class="gallery">
-            <a href="zdj/produkty/swiece/niedzwiedz3.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz3.jpg"></a>
-            <a href="zdj/produkty/swiece/niedzwiedz4.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz4.jpg"></a>
-            <a href="zdj/produkty/swiece/niedzwiedz.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz.jpg"></a>
-            <a href="zdj/produkty/swiece/niedzwiedz2.jpg"><img src="zdj/produkty/swiece/JPEG/niedzwiedz2.jpg"></a>
-            <a href="zdj/produkty/swiece/slon.jpg"><img src="zdj/produkty/swiece/JPEG/slon.jpg"></a>
-            <a href="zdj/produkty/swiece/slon5.jpg"><img src="zdj/produkty/swiece/JPEG/slon5.jpg"></a>
-            <a href="zdj/produkty/swiece/slon1.jpg"><img src="zdj/produkty/swiece/JPEG/slon1.jpg"></a>
-            <a href="zdj/produkty/swiece/kon.jpg"><img src="zdj/produkty/swiece/JPEG/kon.jpg"></a>
-            <a href="zdj/produkty/swiece/kon1.jpg"><img src="zdj/produkty/swiece/JPEG/kon1.jpg"></a>
+        <div class="cont">
+        <h1>Słoń</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>41</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+                </div>
+            </form>
         </div>
-                            
-            <li>Zakochani - 30 zł</li>
+    </div>  
+        <div class="cont">
+        <h1>Niedźwiedź</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>41</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>  
+        <div class="cont">
+    <h1>Koń</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>41</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>   
+                    <div class="cont">
+        <h1>Zakochani</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>30</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div>
+                    <div class="cont">
+        <h1>Marilyn i Martin</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Rodzaj: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="Marilyn">
+                <label for="Choice1">Marilyn</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="Martin">
+                <label for="Choice2">Martin</label>
+
+                <input type="radio" id="Choice3"
+                 name="size" value="Razem">
+                <label for="Choice3">Razem</label>
+                    </div>
+                <div><label>Cena: <h2></h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div>
+                    <div class="cont">
+        <h1>Marilyn i Martin</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Rodzaj: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="Marilyn">
+                <label for="Choice1">Marilyn</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="Martin">
+                <label for="Choice2">Martin</label>
+
+                <input type="radio" id="Choice3"
+                 name="size" value="Razem">
+                <label for="Choice3">Razem</label>
+                    </div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div>
+                    <div class="cont">
+        <h1>Audrey i Joe</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Rodzaj: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="Audrey">
+                <label for="Choice1">Audrey</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="Joe">
+                <label for="Choice2">Joe</label>
+
+                <input type="radio" id="Choice3"
+                 name="size" value="Razem">
+                <label for="Choice3">Razem</label>
+                    </div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div>
             <li>Marilyn - 30 zł</li> 
             <li>Martin - 35</li>             
             <li>Audrey - 35 zł </li>
@@ -138,60 +550,23 @@
             <li>Emily - 33 zł</li>  
             <li>Marilyn&#38Martin w zestawie - 50 zł</li>
             <li>Andrey&#38Joe w zestawie - 55 zł</li>
-        <div class="gallery">
-            <a href="zdj/produkty/swiece/para3.jpg"><img src="zdj/produkty/swiece/JPEG/para3.jpg"></a>
-            <a href="zdj/produkty/swiece2/para.jpg"><img src="zdj/produkty/swiece/JPEG/para2.jpg"></a>
-            <a href="zdj/produkty/swiece/para.jpg"><img src="zdj/produkty/swiece/JPEG/para.jpg"></a>
-            <a href="zdj/produkty/swiece/kob.jpg"><img src="zdj/produkty/swiece/JPEG/kob.jpg"></a>
-            <a href="zdj/produkty/swiece/kob1.jpg"><img src="zdj/produkty/swiece/JPEG/kob1.jpg"></a>
-            <a href="zdj/produkty/swiece/kob2.jpg"><img src="zdj/produkty/swiece/JPEG/kob2.jpg"></a>
-            <a href="zdj/produkty/swiece/body2.jpg"><img src="zdj/produkty/swiece/JPEG/body2.jpg"></a>
-            <a href="zdj/produkty/swiece/body1.jpg"><img src="zdj/produkty/swiece/JPEG/body1.jpg"></a>
-            <a href="zdj/produkty/swiece/women.jpg"><img src="zdj/produkty/swiece/JPEG/women.jpg"></a>
-            <a href="zdj/produkty/swiece/women1.jpg"><img src="zdj/produkty/swiece/JPEG/women1.jpg"></a>
-            <a href="zdj/produkty/swiece/men.jpg"><img src="zdj/produkty/swiece/JPEG/men.jpg"></a>
-            <a href="zdj/produkty/swiece/men1.jpg"><img src="zdj/produkty/swiece/JPEG/men1.jpg"></a>
-            <a href="zdj/produkty/swiece/men3.jpg"><img src="zdj/produkty/swiece/JPEG/men3.jpg"></a>
-            <a href="zdj/produkty/swiece/bodyrazem.jpg"><img src="zdj/produkty/swiece/JPEG/bodyrazem.jpg"></a>
-        </div>  
-                <span>Świece body zaskakują swoimi detalami jak i samą popularnościa! Nagie ciało nie służy tylko do seksualności, a jest piękną i naturalną częścią życia. Nie ważne czy jeszcze nie jesteś Jego tak pewna jak Andrey czy Joe, albo może ktoś próbuje Ci wmówić, że Emily jest "niekształtna".Ważne, żeby się nie bać swojego ciała! </span>
+       
             <li>Kaktus Kajtek - 15 zł</li>
             <li>Rubi - 20 zł</li> 
             <li>Różyczka - 7 z</li>
             <li>Opona - 8 zł</li> 
             <li>Sowa - 10 zł</li> 
             <li>Zając wielkanocny - 10 zł</li>
-        <div class="gallery">
-            <a href="zdj/produkty/swiece/kaktus1.jpg"><img src="zdj/produkty/swiece/JPEG/kaktus1.jpg"></a>
-            <a href="zdj/produkty/swiece/kaktus.jpg"><img src="zdj/produkty/swiece/JPEG/kaktus.jpg"></a>
-            <a href="zdj/produkty/swiece/c.jpg"><img src="zdj/produkty/swiece/JPEG/c.jpg"></a>
-            <a href="zdj/produkty/swiece/c2.jpg"><img src="zdj/produkty/swiece/JPEG/c2.jpg"></a>
-            <a href="zdj/produkty/swiece/opony.jpg"><img src="zdj/produkty/swiece/JPEG/opony.jpg"></a>
-            <a href="zdj/produkty/swiece/opona1.jpg"><img src="zdj/produkty/swiece/JPEG/opona1.jpg"></a>
-            <a href="zdj/produkty/swiece/krolik2.jpg"><img src="zdj/produkty/swiece/JPEG/krolik2.jpg"></a>
-            <a href="zdj/produkty/swiece/krolik3.jpg"><img src="zdj/produkty/swiece/JPEG/krolik3.jpg"></a>
-            <a href="zdj/produkty/swiece/krolik4.jpg"><img src="zdj/produkty/swiece/JPEG/krolik4.jpg"></a>
-        </div> 
                     <h4>Możliwość wyboru zapachu</h4>
                 
             </section>
     
-            <button onclick="show('tealighty')">Tealighty</button><hr class="fullHr">
-            <section id="tealighty"><li>Tealighty - 1,50 zł</li>   
-        <div class="gallery">
-            <a href="zdj/produkty/swiece/tealig.jpg"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
-            <a href="zdj/produkty/swiece/tealighty.jpg"><img src="zdj/produkty/swiece/JPEG/tealighty.jpg"></a>
-            <a href="zdj/produkty/swiece/tealig.jpg"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
-                    </div>
-                <span>Czy wiesz, że w aromaterapii wykorzystuje się olejki eteryczne do poprawy psychicznego samopoczucia? Nawet mała świeczka jest w stanie wprowadzić Cię w relaks i lepsze samopoczucie</span></section>
+            <label onclick="show('tealighty', 3)" class="podgrupa">Tealighty i woski do kominka</label><hr class="fullHr" id="3">
+            <section id="tealighty"><li>Tealighty - 1,50 zł</li> 
+            <li>Woski do kominka - 1,50 zł</li>  
                 
-            <button onclick="show('woski')">Woski do kominka</button><hr class="fullHr">
-            <section id="woski"><li>cos - 1,50 zł</li>   
-        <div class="gallery">
-            <a href="zdj/produkty/swiece/tealighty.jpg"><img src="zdj/produkty/swiece/JPEG/tealighty.jpg"></a>
-            <a href="zdj/produkty/swiece/tealig.jpg"><img src="zdj/produkty/swiece/JPEG/tealig.jpg"></a>
-                    </div>
-                <span>Czy wiesz, że w aromaterapii wykorzystuje się olejki eteryczne do poprawy psychicznego samopoczucia? Nawet mała świeczka jest w stanie wprowadzić Cię w relaks i lepsze samopoczucie</span></section>
+             </section>
+                
               
                 </section>
             
@@ -393,7 +768,6 @@
             <a href="zdj/produkty/p+s/puder3.jpg"><img src="zdj/produkty/p+s/JPEG/puder3.jpg"></a>
             <a href="zdj/produkty/p+s/puder2.jpg"><img src="zdj/produkty/p+s/JPEG/puder2.jpg"></a>
                     </div>
-                <span>Naturalna sól do kąpieli nie tylko pięknie pachnie i odpręża. Dzięki soli Himalajskiej oraz soli gorzkiej Epsom, wygładza skóre i redukuje celulit!</span><span>Puder do kąpieli jest to proszek na bazie mleka, który powoduje, że skóra staje się elastyczna, miękka i nawilżona. Dodatkowo białka mleka pobudzają produkcję kolagenu, dzięki czemu pomaga w redukcji rozstępów i zmarszczek.</span>
 </section>
             
                     <!--<ul class="zapachy"><p>Kolory opasek:</p>
@@ -451,6 +825,7 @@
                 <i><a href="mailto:natural_and_relax@wp.pl">natural_and_relax@wp.pl</a></i>
 
         </footer>
-        <script src="app.js"></script>
+        <script src="anim-carousel.js"></script>
+        <script src="anim-PhoneMenu.js"></script>
 </body>
 </html>

@@ -20,8 +20,7 @@
         <header>
             
             <a href="index.html" class="name"><span>Natural &#38 Relax</span></a>
-            <nav>
-                <button class="home"><img src="zdj/add.png"/></button>
+            <nav id="navigator">
                 <div class="dropdown">
                 <a class="menu" href= "produkty.html">Produkty</a>
                     <ul>
@@ -41,20 +40,25 @@
         </header>
     
             <a href="index.html" class="namePhone"><span>Natural &#38 Relax</span><hr class="bighr"></a>
-    
-   <div id="interior">
+    <button class="home" onclick="showMenu()"><img src="zdj/menu.png"/></button>
     <section class="polecane">
-               <img src="zdj/duzy1.PNG" class="kwiatekPrawy">
 
-            <h1><i>Polecamy</i></h1><hr>
-                <span><img src="zdj/produkty/swiece/JPEG/sloik2.jpg" alt="swieca sojowa"/>Świeca sojowa w szklanym pucharku</span>
-                <span><img src="zdj/produkty/p+s/JPEG/sol3.jpg" alt="sol do kapieli"/>Sól do kapieli ziołowa</span>
-                <span><img src="zdj/produkty/p+s/JPEG/puder3.jpg" alt="puder do kapieli"/>Puder do kąpieli</span>
-                <span><img src="zdj/produkty/mydla/JPEG/masujace.jpg" alt="mydlo"/>Mydło masujące</span>
-                <span><img src="zdj/produkty/kule/JPEG/serc.jpg" alt="musujace serce"/>Serce musujące</span>
-                <span><img src="zdj/produkty/swiece/men3.jpg" alt="swieca Body"/>Świeca body</span>
+            <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+      <div id="menu">
+          <div id="current-option">
+            <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+      <div id="image"></div>
+          </div>
+          <button id="previous-option"></button>
+          <button id="next-option"></button>
+          
+      </div>
+
+          <label onclick="show('current-option-text1')" id="optionToShow">Pokaż opis</label>
         </section>
-    
+   
+   <div id="interior"> 
+        <img scr="zdj/cos">
        <img src="zdj/maly1.PNG" class="kwiatekLewy">
     <section class="odAutora">
         <h1><i>Wyrób produktów</i></h1><hr>
@@ -73,7 +77,6 @@
     </section>
        </div>
     
-       <img src="zdj/maly2.PNG" class="kwiatekLewy">
     <footer>
                 <h2><b>Natural &#38 Relax</b></h2>
                 <a href="https://www.instagram.com/natural_and_relax/"><img src="zdj/instagram.png" alt="Instagram"/></a>
@@ -81,5 +84,7 @@
                 <i><a href="mailto:natural_and_relax@wp.pl">natural_and_relax@wp.pl</a></i>
 
         </footer>
+        <script src="anim-MainSide.js"></script>
+        <script src="anim-PhoneMenu.js"></script>
 </body>
 </html>

@@ -24,16 +24,23 @@ header{
 }
 nav{
     margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 header a{
     font-size: 20px;
     color: #5F3915;
 }
+.home img{
+    width: 30px;
+    height: 30px;
+}
 .home{
-    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    border: 0;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    background-color: burlywood;
 }
 .name{
     font-size: 40px;
@@ -77,26 +84,40 @@ a.active, .dropdown ul li:hover, a.menu:hover{
 
 
 /*-----------------------na telefon-------------------*/
-@media (min-width: 800px){
+@media (min-width: 900px){
+    /*menu itd*/
     .namePhone{
         display: none;
     }
     .menu{
         padding: .7rem 3rem;
     }
+    nav{   
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    /*strona glowna*/
     .komentarze p{
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .produkty section{
-        width: 80%;
-        padding: 0 110px 15% 110px;
+    .polecane label, .home{
+        display: none;
     }
-    .produkty span{
-        max-width: 60%;
+    .polecane{
+        padding-top: 15%;
     }
+    #current-option-text1{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /*o nas*/
     .onas p{
         width: 50%;
         text-align: left;
@@ -106,25 +127,29 @@ a.active, .dropdown ul li:hover, a.menu:hover{
     .onas img{
         display: inline-block;
     }
+    
+    /*formularz*/
+    .kontakt label{
+        margin-left: 25%;
+    }
 }
 
-@media (max-width: 800px){
-    header{
+@media (max-width: 900px){          /*NA TELEFON*/
+    /*menu itd*/
+    nav{   
         background-color: #D3C4C5;
-        opacity: .9;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 25%;
-        right: -25%;
-    }
-    .menu{
-        padding: .25rem 2rem;
-    }
-    .komentarze p{
-        display: inline;
-    }
-    .name{
+        position: absolute;
+        height: 100vh;
+        right: 0;
+        z-index: 101;
         display: none;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home{
+        display: block;
+        z-index: 100;
     }
     .namePhone{
         font-size: 40px;
@@ -140,24 +165,51 @@ a.active, .dropdown ul li:hover, a.menu:hover{
         border: none;
         margin: 5% 0;
     }
-    .left, .right, .wstawka, .kwiatki, .circle{
+    
+    /*strona glowna*/
+    .polecane label, #home{
+        display: inline;
+        z-index: 4;
+    }
+    .polecane{
+        padding-top: 5%;
+    }
+    #current-option-text1{
+        display: none;
+       width: 80%;
+    }
+    .left, .right, .kwiatekPrawy, .kwiatekLewy, .name{
         display: none;
     }
-    .produkty{
-        margin: 0;
-    } 
-    .produkty span{
-        max-width: 90%;
-    } 
-    .produkty section{
+    .komentarze p{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*produkty*/
+    .produkty {
         width: 100%;
         padding: 0;
     }
+    
+    /*o nas*/
     .onas p{
         text-align: left;
         margin-left: 5px;
         font-size: 18px;
     }  
+    
+    /*formularz*/
+    #name, #mail, #msg{
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+    .kontakt label{
+        margin-left: 0;
+    }
+    .wstawka, .circle{
+        display: none;
+    }
 }
 
 /*-----------------------ogolne zalozenia w body-------------------*/
@@ -191,8 +243,6 @@ section{
 /*-----------------------tlo (kwiatki)-------------------*/
 
 .kwiatekLewy, .kwiatekPrawy{
-    width: 250px;
-    height: 250px;
     opacity: 0.2;
     position: absolute;
     z-index: -1;
@@ -206,18 +256,156 @@ section{
 
 /*-----------------------wnetrze-------------------*/
 
-.polecane span{
-    display: inline-block;
-    width: 300px;
-    text-align: center;
-    margin: 2%; 
-}
-.polecane img{
-    height: 300px;
-    width: 300px;
+.polecane {
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
+#menu {
+    padding: 0;
+    width: 100vw;
+    height: 380px;
+    font-style: italic;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    transition: all 0.6s ease-in-out;
+}
+#current-option {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+#current-option-text1 {
+  font-size: 20px;
+  line-height: 2rem;
+  height: 250px;
+}
+#current-option-text1::before {
+  content: attr(data-next-text);
+  position: absolute;
+  transform: translate(0%, 380px);
+  width: 100%;
+  height: 250px;
+}
+#current-option-text1::after {
+  content: attr(data-previous-text);
+  position: absolute;
+  transform: translate(0%, -380px);
+  width: 100%;
+  height: 250px;
+}
+#current-option-text2 {
+  font-size: 2rem;
+  height: 40px;
+    border: 0;
+}
+#image {
+  height: 300px;
+  width: 300px;
+    margin-left: 0;
+    background-size: cover;
+    border-radius: 25%;
+  z-index: 3;
+}
+#previous-option {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+    display: block;
+  cursor: pointer;
+  background: url("zdj/next.png");
+  background-size: cover;
+  position: absolute;
+    right: 420px;
+  transform: translate(400px, 50px) rotate(90deg);
+}
+#next-option {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+    display: block;
+  cursor: pointer;
+  background: url("zdj/next.png");
+  background-size: cover;
+  position: absolute;
+    right: 420px;
+  transform: translate(400px, -50px) rotate(270deg);
+}
+.anim-next {
+  pointer-events: none;
+}
+.anim-next #current-option-text1 {
+  animation: next-text 0.65s 0.085s;
+}
+.anim-next #previous-option {
+  animation: next-top-arrow 0.65s 0.085s;
+}
+.anim-next #next-option {
+  animation: next-bottom-arrow 0.65s 0.085s;
+}
+.anim-next #image {
+  animation: image 0.65s 0.085s;
+}
+.anim-previous {
+  pointer-events: none;
+}
+.anim-previous #current-option-text1, .anim-previous #current-option-text2 {
+  animation: previous-text 0.65s 0.085s;
+}
+.anim-previous #previous-option {
+  animation: previous-top-arrow 0.65s 0.085s;
+}
+.anim-previous #next-option {
+  animation: previous-bottom-arrow 0.65s 0.085s;
+}
+.anim-previous #image {
+  animation: image 0.65s 0.085s;
+}
+@keyframes previous-text {
+  50%, 55% {
+    transform: translate(0%, 390px);
+  }
+  to {
+    transform: translate(0%, 380px);
+  }
+}
+@keyframes image {
+    0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes next-text {
+  50%, 55% {
+    transform: translate(0%, -390px);
+  }
+  to {
+    transform: translate(0%, -350px);
+  }
+}
+.polecane label{
+    cursor: pointer;
+}
+
 .komentarze img{
     width: 40px;
     height: 40px;
@@ -232,8 +420,6 @@ section{
     display: inline-flex;
     align-items: center;
     font-size: 1.2rem;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 .left, .right{
     width: 200px; 
@@ -252,22 +438,20 @@ section{
 form{
     text-align: left;
 }
-input, textarea{
+.kontakt input,.kontakt textarea{
     font-family: 'Quicksand', sans-serif;
-    min-width: 50%;
+    width: 50%;
     margin-bottom: 1rem;
     padding: .5rem;
     display: flex;
     align-items: center;
 }
-label{
-    margin-left: 25%;
-}
 .kontakt{
     line-height: 2rem;
     font-size: 20px;
 }
-.button{
+#button{
+    width: 60px;
     min-width: 4.5rem;
     border: 1px solid black;
     height: 2.5rem;
@@ -277,7 +461,7 @@ label{
     font-size: 15px;
     transition: background-color .6s ease-in-out;
 }
-.button:hover{
+#button:hover{
     background-color: #DCD6D6;
     border: 1.5px solid black;
 }
@@ -337,9 +521,16 @@ input:hover, textarea:hover{
 
 /*-----------------------produkty-------------------*/
 
-
-.produkty section{
+.podgrupa{
+    display: flex;
     text-align: left;
+}
+#swieceWSzkle, #swieceWolnostojace, #tealighty{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
     margin: 0;
 }
 .produkty img{
@@ -348,53 +539,77 @@ input:hover, textarea:hover{
 }
 .fullHr{
     margin-left: 0;
-    width: 60%;
-    transform: scaleX(-2);
+    width: 30%;
     height: .5px;
     transition: transform 2s;
 }
-.produkty button:hover + .fullHr{
-    transform: scaleX(1);
+.podgrupa{
+    cursor: pointer;
 }
-.swiece section, .kule section, .mydla section, .kapiel section, .wlosy section{
+.produkty label:hover + .fullHr{
+    transform: scale(-1.5);
+}
+.container {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.2);
 }
-.gallery {
+.cont h1{
+    display: block;
     margin: 0;
+}
+.cont{
     display: flex;
-    overflow: hidden;
-    position: relative;
-    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
-.slide{
+.container img {
+    z-index: -2;
+    margin-top: 15px;
+}
+.produkty form input{
+    margin-left: 5%;
+}
+.produkty form{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 0 5%;
 }
-#nextBtn{
-    right: 0;
-    padding: 134px 0 134px 50px;
-    border-bottom-right-radius: 25%;
-    border-top-right-radius: 25%;
+.produkty form div{
+    margin: 0 0 .5rem 0;
 }
-#prevBtn{
-    padding: 134px 50px 134px 0;
-    border-bottom-left-radius: 25%;
-    border-top-left-radius: 25%;
-}
-#prevBtn, #nextBtn{
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    z-index: 2;
-}
-#nextBtn:hover{
-    background-image: linear-gradient(to left, #D3C4C5, transparent);
-}
-#prevBtn:hover{
-    background-image: linear-gradient(to right, #5F3915, transparent);
-}
-#prevBtn img, #nextBtn img{
+.left-btn img, .right-btn img{
     width: 30px;
     height: 30px;
+    margin: 0;
+}
+.left-btn, .right-btn {
+    z-index: 10;
+    padding: 20px 20px 20px 0;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 1s;
+}
+.left-btn:hover, .right-btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right-btn {
+    margin: 30% 0 auto 0;
+    transform: rotate(180deg);
+}
+
+.left-btn {
+    margin: 30% 0 auto 0;
 }
 
 /*-----------------------dol-------------------*/
