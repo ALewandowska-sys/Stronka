@@ -20,10 +20,15 @@ header{
     position: fixed;
     background-image: linear-gradient(to left, #C1ABAD, transparent);
     width: 100%;
-    z-index: 5;
+    z-index: 25;
 }
 nav{
     margin: 0;
+}
+header img{
+    width: 40px;
+    height: 40px;
+    margin: .5 rem;
 }
 header a{
     font-size: 20px;
@@ -41,6 +46,7 @@ header a{
     border-top-left-radius: 25%;
     border-bottom-left-radius: 25%;
     background-color: burlywood;
+    transition: .2s transform;
 }
 .name{
     font-size: 40px;
@@ -74,9 +80,6 @@ header a{
     padding: 0;
     margin: 0;
 }
-a.active, .dropdown ul li:hover, a.menu:hover{
-    background-color: #F1E1DA;
-}
 .dropdown a.menu:hover + ul,
 .dropdown ul:hover{
     display: block;
@@ -97,6 +100,9 @@ a.active, .dropdown ul li:hover, a.menu:hover{
         justify-content: flex-start;
         align-items: center;
     }
+    a.active, .dropdown ul li:hover, a.menu:hover{
+        background-color: #F1E1DA;
+    }
     
     /*strona glowna*/
     .komentarze p{
@@ -105,14 +111,14 @@ a.active, .dropdown ul li:hover, a.menu:hover{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .polecane label, .home{
+    #optionToShow, .home{
         display: none;
     }
     .polecane{
-        padding-top: 15%;
+        padding-top: 10%;
     }
     #current-option-text1{
-        width: 40%;
+        width: 30%;
         display: flex;
         justify-content: center;
     }
@@ -139,13 +145,25 @@ a.active, .dropdown ul li:hover, a.menu:hover{
     nav{   
         background-color: #D3C4C5;
         position: absolute;
-        height: 100vh;
-        right: 0;
+        right: -11.5rem;
+        display: inline-flex;
+        top: 10vh;
         z-index: 101;
-        display: none;
-        justify-content: flex-start;
         flex-direction: column;
-        align-items: center;
+        transition: .2s transform;
+    }
+    .wysunMenu{
+        transform: translateX(-11.5rem);
+    }
+    .menu{
+        padding: 5%;
+    }
+    .dropdown{
+        margin-top: 5%;
+    }
+    .dropdown ul{
+        display: block;
+        position:static;
     }
     .home{
         display: block;
@@ -167,12 +185,15 @@ a.active, .dropdown ul li:hover, a.menu:hover{
     }
     
     /*strona glowna*/
-    .polecane label, #home{
-        display: inline;
+    #optionToShow{
+        display: inline;        
         z-index: 4;
     }
     .polecane{
         padding-top: 5%;
+    }
+    .icons{
+        flex-wrap: wrap;
     }
     #current-option-text1{
         display: none;
@@ -235,7 +256,7 @@ hr{
 section{
     color: #636161;
     display: block;
-    padding-top: 7%;
+    padding-top: 10%;
     z-index: 3;
 }
 
@@ -322,6 +343,7 @@ section{
   width: 1.5rem;
   height: 1.5rem;
   border: none;
+    z-index: 5;
     display: block;
   cursor: pointer;
   background: url("zdj/next.png");
@@ -334,6 +356,7 @@ section{
   width: 1.5rem;
   height: 1.5rem;
   border: none;
+    z-index: 5;
     display: block;
   cursor: pointer;
   background: url("zdj/next.png");
@@ -402,10 +425,26 @@ section{
     transform: translate(0%, -350px);
   }
 }
-.polecane label{
+#optionToShow{
     cursor: pointer;
 }
-
+.icons{
+    display: flex;
+    align-content: center;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+.icon img{
+    width: 70px;
+    height: 70px;
+}
+.icon p{
+    font-size: 15px;
+}
 .komentarze img{
     width: 40px;
     height: 40px;
@@ -521,17 +560,32 @@ input:hover, textarea:hover{
 
 /*-----------------------produkty-------------------*/
 
+.produkty section{
+    padding: 0;
+    margin-bottom: 10%;
+}
 .podgrupa{
     display: flex;
     text-align: left;
 }
-#swieceWSzkle, #swieceWolnostojace, #tealighty{
-    display: none;
+#kule, #mydla, #kapiel, #wlosy, #inne{
+    display: flex;
+}
+.newSection{
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
     width: 100%;
-    margin: 0;
+    margin: 0 0 10% 0;
+}
+#swieceWSzkle, #swieceWolnostojace, #tealighty{
+    display: none;
+}
+.wstawkaProduktu{
+    display: block;
+    font-size: 25px;
+    font-style: italic;
+    margin: 5% 10%;
 }
 .produkty img{
     width: 300px;
@@ -546,7 +600,7 @@ input:hover, textarea:hover{
 .podgrupa{
     cursor: pointer;
 }
-.produkty label:hover + .fullHr{
+.podgrupa:hover + .fullHr{
     transform: scale(-1.5);
 }
 .container {
@@ -566,7 +620,7 @@ input:hover, textarea:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 4% 1%;
 }
 .container img {
     z-index: -2;

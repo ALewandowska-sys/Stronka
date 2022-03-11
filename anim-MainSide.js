@@ -89,7 +89,7 @@ optionPrevious.onclick = function () {
 };
 
 
-//pokazanie podgrupy
+//zamiana przy widoku responsywnym
 
 function show(groupId) {
   var image = document.getElementById("image");
@@ -106,4 +106,3 @@ function show(groupId) {
       document.getElementById("optionToShow").innerHTML = "Pokaż opis";
   }
 }
-

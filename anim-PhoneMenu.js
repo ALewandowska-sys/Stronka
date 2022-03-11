@@ -1,12 +1,9 @@
 //show a menu on phone
 
-function showMenu(){
-    var navigator = document.getElementById("navigator");
-  var foo = window.getComputedStyle(navigator, null);
-    
-    if (foo.getPropertyValue("display") == 'none') {
-    navigator.style.display = 'flex';
-  } else {
-    navigator.style.display = 'none';
-  }
-}
+const buttonMenu = document.querySelector('.home');
+const schowaneMenu = document.querySelector('#navigator');
+
+buttonMenu.addEventListener('click', () => {
+    buttonMenu.classList.toggle('wysunMenu');
+    schowaneMenu.classList.toggle('wysunMenu');
+})

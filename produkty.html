@@ -16,6 +16,8 @@
             
             <a href="index.html" class="name"><span>Natural &#38 Relax</span></a>
             <nav id="navigator">
+    <button class="home" onclick="showMenu()"><img src="zdj/menu.png"/></button>
+    
                 <div class="dropdown">
                 <a class="menu" href= "produkty.html">Produkty</a>
                     <ul>
@@ -35,16 +37,16 @@
         </header>
     
             <a href="index.html" class="namePhone"><span>Natural &#38 Relax</span><hr class="bighr"></a>
-    <button class="home" onclick="showMenu()"><img src="zdj/menu.png"/></button>
     
     <div id="interior">
         <section class="produkty">
             
                     <h1><i>Świece sojowe</i></h1><hr>
             <section id="swiece">
+                <span class="wstawkaProduktu">Wszystkie świece są wykonane z wosku sojowego bez zawartości GMO. Zapewniamy długi czas palenia i intensywny zapach uzyskany dzięki Naszym olejkom eterycznym</span>
             <label onclick="show('swieceWSzkle', 1)" class="podgrupa">Świece sojowe w szkle</label><hr class="fullHr" id="1">
                 
-                <section id="swieceWSzkle">
+                <section id="swieceWSzkle" class="newSection">
                     <div class="cont">
         <h1>Świeca w szklanym pucharku</h1>
         <div class="container">
@@ -234,16 +236,11 @@
             </form>
         </div>
     </div>   
-            <li>Świeca w szklanym słoiku 200 ml - 30 zł</li>
-            <li>Świeca w szklanym słoiku 330 ml - 45 zł</li>
-            <li>Świeca w szklanym słoiku 350 ml - 48 zł</li>       
-            <li>Świeca INHALA 90 ml - 15 zł</li> 
-            <li>Świeca INHALA 200 ml - 30 zł</li>
                 </section>
                 
 
             <label onclick="show('swieceWolnostojace', 2)" class="podgrupa">Świece sojowe wolnostojące</label><hr class="fullHr" id="2">
-                <section id="swieceWolnostojace">
+                <section id="swieceWolnostojace" class="newSection">
         <div class="cont">
         <h1>Słoń</h1>
         <div class="container">
@@ -443,56 +440,7 @@
             </form>
         </div>
     </div>
-                    <div class="cont">
-        <h1>Marilyn i Martin</h1>
-        <div class="container">
-            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
-            <img class="carousel" src="" alt="">
-            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
-            <form>
-                <div>
-                <p>Rodzaj: </p>
-                <input type="radio" id="Choice1"
-                 name="size" value="Marilyn">
-                <label for="Choice1">Marilyn</label>
-
-                <input type="radio" id="Choice2"
-                 name="size" value="Martin">
-                <label for="Choice2">Martin</label>
-
-                <input type="radio" id="Choice3"
-                 name="size" value="Razem">
-                <label for="Choice3">Razem</label>
-                    </div>
-                <div>
-                    <label>Zapachy</label>
-                    <select>
-                    <option value="Kawa">Kawa</option>
-                    <option value="Frezja">Frezja</option>
-                    <option value="Bez">Bez</option>
-                    <option value="Sosna">Sosna</option>
-                    <option value="Piwonia">Piwonia</option>
-                    <option value="Konwalia">Konwalia</option>
-                    <option value="Czekolada">Czekolada</option>
-                    <option value="Eukaliptus">Eukaliptus</option>
-                    <option value="Róża">Róża</option>
-                    <option value="Pomarańcz">Pomarańcz</option>
-                    <option value="Lawenda">Lawenda</option>
-                    <option value="Mięta">Mięta</option>
-                    <option value="Czekolada">Czekolada</option>
-                    <option value="Owoce leśne">Owoce leśne</option>
-                    <option value="Cynamon">Cynamon</option>
-                    <option value="Mangolia">Mangolia</option>
-                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
-                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
-                    <option value="Słodki granat">Słodki granat</option>
-                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
-                    <option value="Kawa-czekolada">Kawa-czekolada</option>
-                    </select>
-            </div>
-            </form>
-        </div>
-    </div>
+                   
                     <div class="cont">
         <h1>Audrey i Joe</h1>
         <div class="container">
@@ -543,100 +491,488 @@
             </form>
         </div>
     </div>
-            <li>Marilyn - 30 zł</li> 
-            <li>Martin - 35</li>             
-            <li>Audrey - 35 zł </li>
-            <li>Joe - 35 zł</li> 
-            <li>Emily - 33 zł</li>  
-            <li>Marilyn&#38Martin w zestawie - 50 zł</li>
-            <li>Andrey&#38Joe w zestawie - 55 zł</li>
-       
-            <li>Kaktus Kajtek - 15 zł</li>
-            <li>Rubi - 20 zł</li> 
-            <li>Różyczka - 7 z</li>
-            <li>Opona - 8 zł</li> 
-            <li>Sowa - 10 zł</li> 
-            <li>Zając wielkanocny - 10 zł</li>
-                    <h4>Możliwość wyboru zapachu</h4>
-                
+            <div class="cont">
+        <h1>Emily</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>33</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Kaktus Kajtek</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>15</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Rubi</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>20</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Różyczka</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>7</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Opona</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>8</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Sowa</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>10</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Zając wielkanocny</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>10</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div>
+                            
             </section>
     
             <label onclick="show('tealighty', 3)" class="podgrupa">Tealighty i woski do kominka</label><hr class="fullHr" id="3">
-            <section id="tealighty"><li>Tealighty - 1,50 zł</li> 
-            <li>Woski do kominka - 1,50 zł</li>  
-                
+            <section id="tealighty" class="newSection"> 
+                 
+                    <div class="cont">
+        <h1>Tealighty</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>1,50</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div><div class="cont">
+        <h1>Woski do kominka</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div><label>Cena: <h2>3</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Kawa">Kawa</option>
+                    <option value="Frezja">Frezja</option>
+                    <option value="Bez">Bez</option>
+                    <option value="Sosna">Sosna</option>
+                    <option value="Piwonia">Piwonia</option>
+                    <option value="Konwalia">Konwalia</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Eukaliptus">Eukaliptus</option>
+                    <option value="Róża">Róża</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Mięta">Mięta</option>
+                    <option value="Czekolada">Czekolada</option>
+                    <option value="Owoce leśne">Owoce leśne</option>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Mangolia">Mangolia</option>
+                    <option value="Jabłko-cynamon">Jabłko-cynamon</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Słodki granat">Słodki granat</option>
+                    <option value="Dzewo sandałowe">Dzewo sandałowe</option>
+                    <option value="Kawa-czekolada">Kawa-czekolada</option>
+                    </select>
+            </div>
+            </form>
+        </div>
+    </div>
              </section>
                 
               
                 </section>
             
-                <!--<ul class="zapachy"><p>Zapachy:</p>
-                        <li>Kawa</li>
-                        <li>Cynamon</li>
-                        <li>Pomarańcz</li>
-                        <li>Lawenda</li>
-                        <li>Malina</li>
-                        <li>Goździkowy</li>
-                        <li>Grejfrut</li>
-                        <li>Guma balonowa</li>
-                        <li>Drzewo herbaciane</li>
-                        <li>Zielone jabłuszko</li>
-                        <li>Zielona herbata</li>
-                        <li>Wanilia</li>
-                        <li>Kakao</li>
-                        <li>Kokos</li>
-                        <li>Cytryna</li>
-                        <li>Imbir</li>
-                        <li>Curry</li>
-</ul>
-                <ul class="dodatki"><p>Dodatki:</p>
-                        <li>Płatki róż</li>
-                        <li>Płatki hibiskusa</li>
-                        <li>Susz owocowy</li>
-                        <li>Suszona lawenda</li>
-                        <li>Liście zielonej herbaty</li>
-                        <li>Zielona herbata w proszku</li>
-                        <li>Suszona pomarańcz</li>
-                        <li>Sól himalajska</li>
-                        <li>Wiórki kokosowe</li>
-                        <li>Płatki nagietka</li>
-                        <li>Owoc dzikiej róży</li>
-                        <li>Suszony chmiel</li>
-                        <li>Płatki owsiane</li>
-                        <li>Niebieski mak</li>
-                        <li>Płatki gożdzika</li>
-                        <li>Ziarna kawy</li>
-                        <li>Mielona kawa</li>
-                        <li>Płatki migdałów</li>
-                        <li>Skórka pomarańczy</li>
-                        <li>Skórka cytryny</li>
-                        <li>Susz kwiatowy</li>
-                        <li>Brokat</li>
-</ul>-->
                     <h1><i>Kule musujące</i></h1><hr>
-            <section id="kule"> 
-                    <ul>
-                        <li>Kula musująca - 9 zł</li>
-                        <li>Kula musująca XXL - 21 zł</li>
-                        <li>Kula musująca dla dzieci z niespodzianką w środku - 10 zł</li>
-                        <li>Duże serce musujące - 10 zł</li>
-                        <li>Małe serca 6 szt. - 10 zł</li> 
-                    </ul>
-        <div class="gallery">
-            <a href="zdj/produkty/kule/kula.jpg"><img src="zdj/produkty/kule/JPEG/kula.jpg"></a>
-            <a href="zdj/produkty/kule/kula2.jpg"><img src="zdj/produkty/kule/JPEG/kula2.jpg"></a>
-            <a href="zdj/produkty/kule/kula3.jpg"><img src="zdj/produkty/kule/JPEG/kula3.jpg"></a>
-            <a href="zdj/produkty/kule/kuleS.jpg"><img src="zdj/produkty/kule/JPEG/kuleS.jpg"></a>
-            <a href="zdj/produkty/kule/serc.jpg"><img src="zdj/produkty/kule/JPEG/serc.jpg"></a>
-            <a href="zdj/produkty/kule/serc2.jpg"><img src="zdj/produkty/kule/JPEG/serc2.jpg"></a>
-            <a href="zdj/produkty/kule/serc3.jpg"><img src="zdj/produkty/kule/JPEG/serc3.jpg"></a>
-            <a href="zdj/produkty/kule/serc4.jpg"><img src="zdj/produkty/kule/JPEG/serc4.jpg"></a>
-            <a href="zdj/produkty/kule/serc6.jpg"><img src="zdj/produkty/kule/JPEG/serc6.jpg"></a>
-            <a href="zdj/produkty/kule/kwiatek.jpg"><img src="zdj/produkty/kule/JPEG/kwiatek.jpg"></a>
-            <a href="zdj/produkty/kule/kwiatek1.jpg"><img src="zdj/produkty/kule/JPEG/kwiatek1.jpg"></a>
-            <a href="zdj/produkty/kule/kwitek1.jpg"><img src="zdj/produkty/kule/JPEG/kwitek1.jpg"></a>
+            <span class="wstawkaProduktu">Kule bla bla bla</span>
+            <section id="kule" class="newSection"> 
+                 <div class="cont">
+        <h1>Kula musująca</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Rodzaj: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="klasyczna">
+                <label for="Choice1">Klasyczna</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="XXL">
+                <label for="Choice2">XXL</label>
+
+                <input type="radio" id="Choice3"
+                 name="size" value="dlaDzieci">
+                <label for="Choice3">Dla dzieci z niespodzianką</label>
                     </div>
-                <p></p>
+                <div><label>Cena: <h2>10</h2>zł</label></div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Malina">Malina</option>
+                    <option value="Goździkowy">Goździkowy</option>
+                    <option value="Grejfrut">Grejfrut</option>
+                    <option value="Guma balonowa">Guma balonowa</option>
+                    <option value="Drzewo herbaciane">Drzewo herbaciane</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Zielona herbata">Zielona herbata</option>
+                    <option value="Wanilia">Wanilia</option>
+                    <option value="Kakao">Kakao</option>
+                    <option value="Kokos">Kokos</option>
+                    <option value="Cytryna">Cytryna</option>
+                    <option value="Imbir">Imbir</option>
+                    <option value="Kawa">Kawa</option>
+                    </select>
+            </div>
+                <div>
+            <label>Dodatek</label>
+            <select>
+                <option value="Susz kwiatowy">Susz kwiatowy</option>
+                <option value="Brokat">Brokat</option>
+                <option value="Liście zielonej herbaty">Liście zielonej herbaty</option>
+                <option value="Płatki migdałów">Płatki migdałów</option>
+                <option value="Płatki gożdzika">Płatki gożdzika</option>
+                <option value="Niebieski mak">Niebieski mak</option>
+                <option value="Płatki owsiane">Płatki owsiane</option>
+                <option value="Owoc dzikiej róży">Owoc dzikiej róży</option>
+                <option value="Płatki nagietka">Płatki nagietka</option>
+                <option value="Wiórki kokosowe">Wiórki kokosowe</option>
+                <option value="Sól himalajska">Sól himalajska</option>
+                <option value="Skórka pomarańczy">Skórka pomarańczy</option>
+                <option value="Suszony chmiel">Suszony chmiel</option>
+                <option value="Skórka cytryny">Skórka cytryny</option>
+                <option value="Suszona lawenda">Suszona lawenda</option>
+                <option value="Susz owocowy">Susz owocowy</option>
+                <option value="Suszona pomarańcz">Suszona pomarańcz</option>
+                <option value="Mielona kawa">Mielona kawa</option>
+                <option value="Ziarna kawy">Ziarna kawy</option>
+                <option value="Płatki hibiskusa">Płatki hibiskusa</option>
+                <option value="Płatki róż">Płatki róż</option>
+            </select>
+                </div>
+            </form>
+        </div>
+    </div>
+                
+                 <div class="cont">
+        <h1>Serca musujące</h1>
+        <div class="container">
+            <button class="left-btn"><img src="zdj/left-arrow.png"></button>
+            <img class="carousel" src="" alt="">
+            <button class="right-btn"><img src="zdj/left-arrow.png"></button>
+            <form>
+                <div>
+                <p>Rodzaj: </p>
+                <input type="radio" id="Choice1"
+                 name="size" value="klasyczna">
+                <label for="Choice1">Duże</label>
+
+                <input type="radio" id="Choice2"
+                 name="size" value="XXL">
+                <label for="Choice2">6szt małych</label>
+                    
+                    </div>
+                <div>
+                    <label>Zapachy</label>
+                    <select>
+                    <option value="Cynamon">Cynamon</option>
+                    <option value="Pomarańcz">Pomarańcz</option>
+                    <option value="Lawenda">Lawenda</option>
+                    <option value="Malina">Malina</option>
+                    <option value="Goździkowy">Goździkowy</option>
+                    <option value="Grejfrut">Grejfrut</option>
+                    <option value="Guma balonowa">Guma balonowa</option>
+                    <option value="Drzewo herbaciane">Drzewo herbaciane</option>
+                    <option value="Zielone jabłuszko">Zielone jabłuszko</option>
+                    <option value="Zielona herbata">Zielona herbata</option>
+                    <option value="Wanilia">Wanilia</option>
+                    <option value="Kakao">Kakao</option>
+                    <option value="Kokos">Kokos</option>
+                    <option value="Cytryna">Cytryna</option>
+                    <option value="Imbir">Imbir</option>
+                    <option value="Kawa">Kawa</option>
+                    </select>
+            </div>
+                <div>
+            <label>Dodatek</label>
+            <select>
+                <option value="Susz kwiatowy">Susz kwiatowy</option>
+                <option value="Brokat">Brokat</option>
+                <option value="Liście zielonej herbaty">Liście zielonej herbaty</option>
+                <option value="Płatki migdałów">Płatki migdałów</option>
+                <option value="Płatki gożdzika">Płatki gożdzika</option>
+                <option value="Niebieski mak">Niebieski mak</option>
+                <option value="Płatki owsiane">Płatki owsiane</option>
+                <option value="Owoc dzikiej róży">Owoc dzikiej róży</option>
+                <option value="Płatki nagietka">Płatki nagietka</option>
+                <option value="Wiórki kokosowe">Wiórki kokosowe</option>
+                <option value="Sól himalajska">Sól himalajska</option>
+                <option value="Skórka pomarańczy">Skórka pomarańczy</option>
+                <option value="Suszony chmiel">Suszony chmiel</option>
+                <option value="Skórka cytryny">Skórka cytryny</option>
+                <option value="Suszona lawenda">Suszona lawenda</option>
+                <option value="Susz owocowy">Susz owocowy</option>
+                <option value="Suszona pomarańcz">Suszona pomarańcz</option>
+                <option value="Mielona kawa">Mielona kawa</option>
+                <option value="Ziarna kawy">Ziarna kawy</option>
+                <option value="Płatki hibiskusa">Płatki hibiskusa</option>
+                <option value="Płatki róż">Płatki róż</option>
+            </select>
+                </div>
+            </form>
+        </div>
+    </div>
+                
                 </section>
             
                 <!--<ul class="zapachy"><p>Zapachy:</p>
@@ -674,6 +1010,7 @@
                         <li>Brokat</li>
 </ul>-->
                     <h1><i>Mydła glicerynowe</i></h1><hr>
+                <span class="wstawkaProduktu">Mydła glicerynowe bla bla bla</span>
             <section id="mydla">
                     <ul>
                     <li>Mydło do masażu - 21 zł</li></ul>
@@ -748,6 +1085,7 @@
                         <li>Suszony hibiskus</li>
                         <li>Wiórki kokosowe</li></ul>-->
                     <h1><i>Sole i pudry</i></h1><hr>
+                <span class="wstawkaProduktu">Sole bla bla pudry bla bla</span>
             <section id="kapiel">
                 
                     <li>Sól do kąpieli 50 g (w szklanej probówce) - 5 zł</li>
@@ -775,6 +1113,7 @@
                     <ul class="dodatki"><p>Materiały do frotek:</p>
                         <li></li></ul>-->
                     <h1><i>Artykuły do włosów</i></h1><hr>
+                <span class="wstawkaProduktu">Frotki bla bla Opaski tez bla</span>
             <section id="wlosy">
                     <ul>
                     <li>Frotka klasyczna - 15 zł</li>
@@ -793,6 +1132,7 @@
                 </section>
             
                     <h1><i>Inne</i></h1><hr>
+                <span class="wstawkaProduktu">Niepowtarzalne podkładki pod kubek, są świetnym pomysłem na prezent. Sam wymyśl co chciałbyś na niej umieścić, a My szybko urzeczywistnimy Twoją wizję!</span>
             <section id="inne">
                 <ul><li>Drewniana podkładka - 20zł</li></ul>
                         <div class="gallery">
@@ -806,7 +1146,6 @@
             <a href="zdj/produkty/inne/slon.jpg"><img src="zdj/produkty/inne/JPEG/slon.jpg"></a>
             <a href="zdj/produkty/inne/wzor.jpg"><img src="zdj/produkty/inne/JPEG/wzor.jpg"></a>
                     </div>
-                <span>Niepowtarzalne podkładki pod kubek, są świetnym pomysłem na prezent. Sam wymyśl co chciałbyś na niej umieścić, a My szybko urzeczywistnimy Twoją wizję!</span>
             </section> 
             
                     <h1><i>Zestawy</i></h1><hr>
