@@ -57,10 +57,10 @@ for(let i=0; i<Carousel.length; i++){
     if(i ===15){ //zajac
         pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
     }
-    if(i ===16){ //zajac
+    if(i ===16){ //tealighty
         pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
     }
-    if(i ===17){ //zajac
+    if(i ===17){ //woski
         pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
     }
     if(i ===18){ //kula mus
@@ -68,10 +68,49 @@ for(let i=0; i<Carousel.length; i++){
     }
     if(i ===19){ //serce mus
         pictures = ["zdj/produkty/kule/JPEG/serc6.jpg", "zdj/produkty/kule/JPEG/serc.jpg", "zdj/produkty/kule/JPEG/serc2.jpg", "zdj/produkty/kule/JPEG/serc3.jpg", "zdj/produkty/kule/JPEG/serc4.jpg"];
+    } 
+    if(i ===20){ //babeczki
+        pictures = ["zdj/produkty/mydla/JPEG/bab.jpg", "zdj/produkty/mydla/JPEG/bab1.jpg", "zdj/produkty/mydla/JPEG/bab3.jpg"];
+    }
+    if(i ===21){ //mis
+        pictures = ["zdj/produkty/mydla/JPEG/mis.jpg", "zdj/produkty/mydla/JPEG/mis2.jpg"];
+    }
+    if(i ===22){ //jelonek
+        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    }
+    if(i ===23){ //serce
+        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    }
+    if(i ===24){ //lovka
+        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    }
+    if(i ===25){ //mini
+        pictures = ["zdj/produkty/mydla/JPEG/mini.jpg", "zdj/produkty/mydla/JPEG/mini1.jpg", "zdj/produkty/mydla/JPEG/mini3.jpg", "zdj/produkty/mydla/JPEG/mini4.jpg", "zdj/produkty/mydla/JPEG/mini5.jpg", "zdj/produkty/mydla/JPEG/mino5.jpg"];
+    }                        
+    if(i ===26){ //mydloMas
+        pictures = ["zdj/produkty/mydla/JPEG/mas.jpg", "zdj/produkty/mydla/JPEG/mas1.jpg", "zdj/produkty/mydla/JPEG/mas2.jpg", "zdj/produkty/mydla/JPEG/mas4.jpg", "zdj/produkty/mydla/JPEG/mas5.jpg", "zdj/produkty/mydla/JPEG/masujace.jpg"];
+    }
+    if(i ===27){ //kostka
+        pictures = ["zdj/produkty/mydla/JPEG/mydla1.jpg", "zdj/produkty/mydla/JPEG/mydla2.jpg"];
+    }
+    if(i ===28){ //sol
+        pictures = ["zdj/produkty/p+s/JPEG/sol3.jpg", "zdj/produkty/p+s/JPEG/sol.jpg", "zdj/produkty/p+s/JPEG/sol2.jpg", "zdj/produkty/p+s/JPEG/sol4.jpg", "zdj/produkty/p+s/JPEG/sol5.jpg", "zdj/produkty/p+s/JPEG/sol6.jpg"];
+    }
+    if(i ===29){ //puder
+        pictures = ["zdj/produkty/p+s/JPEG/puder.jpg", "zdj/produkty/p+s/JPEG/puder3.jpg", "zdj/produkty/p+s/JPEG/puder2.jpg" ];
+    }
+    if(i ===30){ //frotka
+        pictures = ["zdj/produkty/wlosy/JPEG/frotka.jpg", "zdj/produkty/wlosy/JPEG/wlosy.jpg", "zdj/produkty/wlosy/JPEG/wlosy2.jpg", "zdj/produkty/wlosy/JPEG/wlosy3.jpg", "zdj/produkty/wlosy/JPEG/wlosy4.jpg", "zdj/produkty/wlosy/JPEG/wlosy5.jpg", "zdj/produkty/wlosy/JPEG/losy6.jpg"];
+    }
+    if(i ===31){ //opaska
+        pictures = ["zdj/produkty/wlosy/JPEG/opaski.jpg"];
+    }
+    if(i ===32){ //podkladka
+        pictures = ["zdj/produkty/inne/JPEG/duzo.jpg", "zdj/produkty/inne/JPEG/1.jpg", "zdj/produkty/inne/JPEG/cos.jpg", "zdj/produkty/inne/JPEG/jasz.jpg", "zdj/produkty/inne/JPEG/kwiat.jpg", "zdj/produkty/inne/JPEG/pajak.jpg", "zdj/produkty/inne/JPEG/pozdr.jpg", "zdj/produkty/inne/JPEG/slon.jpg", "zdj/produkty/inne/JPEG/wzor.jpg"];
     }
 
         /*    
-            
+           
     */
     
     let imgCarousel = Carousel[i];
@@ -151,5 +190,21 @@ function show(groupId, nrHr) {
             <li>Sowa - 10 zł</li> 
             <li>Zając wielkanocny - 10 zł</li>
             
+                        <ul><li>Mydło do rąk duże - 14 zł</li>
+                        <li>Mydło do rąk małe - 9 zł</li></ul>
+                        <ul><li>Mydlaną babeczka - 10 zł</li>
+                        <li>Mydlane muffiny - 15 zł</li>
+                        <li>3 sztuki mydlanych muffin - 35 zł</li></ul>
+                        
+                    <li>Sól do kąpieli 50 g (w szklanej probówce) - 5 zł</li>
+                    <li>Sól do kąpieli 100 g (w papierowej torebce) - 7 zł</li>
+                    <li>Sól do kąpieli 150 g (w szklanej butelce) - 15 zł</li>
+                    <li>Sól do kąpieli 500 g (w szklanej butelce) - 35 zł</li>
+                    <li>Puder do kąpieli 150 g - 15 zł</li>
+                    <li>Puder do kąpieli 100 g - 10 zł</li>
+                    <li>Puder do kąpieli 50 g - 5 zł</li>
+                    
+                    <li>Frotka klasyczna - 15 zł</li>
+                    <li>Frotka ze wskążką - 18 zł</li>
             
 */

@@ -138,6 +138,11 @@ header a{
     .kontakt label{
         margin-left: 25%;
     }
+    
+    /*produkty*/
+    .wstawkaProduktu{
+        font-size: 1.5vw;
+    }
 }
 
 @media (max-width: 900px){          /*NA TELEFON*/
@@ -211,6 +216,9 @@ header a{
     .produkty {
         width: 100%;
         padding: 0;
+    }
+    .wstawkaProduktu{
+        font-size: 2.75vw;
     }
     
     /*o nas*/
@@ -565,6 +573,7 @@ input:hover, textarea:hover{
     margin-bottom: 10%;
 }
 .podgrupa{
+    cursor: pointer;
     display: flex;
     text-align: left;
 }
@@ -578,12 +587,11 @@ input:hover, textarea:hover{
     width: 100%;
     margin: 0 0 10% 0;
 }
-#swieceWSzkle, #swieceWolnostojace, #tealighty{
+#swieceWSzkle, #swieceWolnostojace, #tealighty, #mydlaUrocze{
     display: none;
 }
 .wstawkaProduktu{
     display: block;
-    font-size: 25px;
     font-style: italic;
     margin: 5% 10%;
 }
@@ -596,9 +604,6 @@ input:hover, textarea:hover{
     width: 30%;
     height: .5px;
     transition: transform 2s;
-}
-.podgrupa{
-    cursor: pointer;
 }
 .podgrupa:hover + .fullHr{
     transform: scale(-1.5);
@@ -631,17 +636,22 @@ input:hover, textarea:hover{
 }
 .produkty form{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 0 0 0 5%;
 }
 .produkty form div{
+    display: flex;
+    align-items: center;
     margin: 0 0 .5rem 0;
 }
 .left-btn img, .right-btn img{
     width: 30px;
     height: 30px;
     margin: 0;
+}
+.produkty form select,.produkty form h2{
+    margin-left: 10px;
 }
 .left-btn, .right-btn {
     z-index: 10;
