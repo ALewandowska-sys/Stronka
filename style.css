@@ -114,13 +114,13 @@ header a{
     #optionToShow, .home{
         display: none;
     }
-    .polecane{
-        padding-top: 10%;
-    }
     #current-option-text1{
         width: 30%;
         display: flex;
         justify-content: center;
+    }
+    #current-option-text2{  
+        top: 10vw;
     }
     
     /*o nas*/
@@ -204,6 +204,9 @@ header a{
         display: none;
        width: 80%;
     }
+    #current-option-text2{  
+        top: 25vw;
+    }
     .left, .right, .kwiatekPrawy, .kwiatekLewy, .name{
         display: none;
     }
@@ -285,25 +288,10 @@ section{
 
 /*-----------------------wnetrze-------------------*/
 
-.polecane {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
 #menu {
     padding: 0;
-    width: 100vw;
-    height: 380px;
     font-style: italic;
     line-height: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    vertical-align: middle;
     transition: all 0.6s ease-in-out;
 }
 #current-option {
@@ -313,12 +301,10 @@ section{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
 }
 #current-option-text1 {
   font-size: 20px;
   line-height: 2rem;
-  height: 250px;
 }
 #current-option-text1::before {
   content: attr(data-next-text);
@@ -335,9 +321,14 @@ section{
   height: 250px;
 }
 #current-option-text2 {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
   font-size: 2rem;
   height: 40px;
     border: 0;
+    left: 30vw;
 }
 #image {
   height: 300px;
@@ -347,39 +338,33 @@ section{
     border-radius: 25%;
   z-index: 3;
 }
-#previous-option {
-  width: 1.5rem;
-  height: 1.5rem;
+.arrows{
+  width: 2rem;
+  height: 2rem;
   border: none;
     z-index: 5;
     display: block;
   cursor: pointer;
   background: url("zdj/next.png");
   background-size: cover;
-  position: absolute;
-    right: 420px;
+    position: relative;
+    margin-right: 470px;
+    top: -170px;
+}
+#previous-option {
   transform: translate(400px, 50px) rotate(90deg);
 }
 #next-option {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: none;
-    z-index: 5;
-    display: block;
-  cursor: pointer;
-  background: url("zdj/next.png");
-  background-size: cover;
-  position: absolute;
-    right: 420px;
   transform: translate(400px, -50px) rotate(270deg);
 }
-.anim-next {
+
+.anim-next, .anim-previous {
   pointer-events: none;
 }
-.anim-next #current-option-text1 {
+.anim-next #current-option-text1{
   animation: next-text 0.65s 0.085s;
 }
-.anim-next #previous-option {
+.anim-next #previous-option{
   animation: next-top-arrow 0.65s 0.085s;
 }
 .anim-next #next-option {
@@ -388,10 +373,7 @@ section{
 .anim-next #image {
   animation: image 0.65s 0.085s;
 }
-.anim-previous {
-  pointer-events: none;
-}
-.anim-previous #current-option-text1, .anim-previous #current-option-text2 {
+.anim-previous #current-option-text1{
   animation: previous-text 0.65s 0.085s;
 }
 .anim-previous #previous-option {
@@ -436,6 +418,7 @@ section{
 #optionToShow{
     cursor: pointer;
 }
+
 .icons{
     display: flex;
     align-content: center;
@@ -572,10 +555,14 @@ input:hover, textarea:hover{
     padding: 0;
     margin-bottom: 10%;
 }
+.category{
+    display: flex;
+    justify-content: space-around;
+}
 .podgrupa{
     cursor: pointer;
-    display: flex;
-    text-align: left;
+    margin: 0;
+    width: 30%;
 }
 #kule, #mydla, #kapiel, #wlosy, #inne{
     display: flex;
@@ -587,7 +574,10 @@ input:hover, textarea:hover{
     width: 100%;
     margin: 0 0 10% 0;
 }
-#swieceWSzkle, #swieceWolnostojace, #tealighty, #mydlaUrocze{
+#swieceWSzkle{
+    display: flex;
+}
+#swieceWolnostojace, #tealighty, #mydlaUrocze{
     display: none;
 }
 .wstawkaProduktu{
@@ -600,13 +590,10 @@ input:hover, textarea:hover{
     height: 300px;
 }
 .fullHr{
-    margin-left: 0;
+    margin: 0;
     width: 30%;
-    height: .5px;
+    height: 2px;
     transition: transform 2s;
-}
-.podgrupa:hover + .fullHr{
-    transform: scale(-1.5);
 }
 .container {
     width: 400px;

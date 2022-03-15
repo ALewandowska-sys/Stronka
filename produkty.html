@@ -43,7 +43,19 @@
                     <h1><i>Świece sojowe</i></h1><hr>
             <section id="swiece">
                 <span class="wstawkaProduktu">Wszystkie świece są wykonane z wosku sojowego bez zawartości GMO. Zapewniamy długi czas palenia i intensywny zapach uzyskany dzięki Naszym olejkom eterycznym</span>
-            <label onclick="show('swieceWSzkle', 1)" class="podgrupa">Świece sojowe w szkle</label><hr class="fullHr" id="1">
+                
+            <div class='category'>
+                <label onclick="show('swieceWSzkle', 1)" class="podgrupa">Świece sojowe w szkle</label>
+            
+                <label onclick="show('swieceWolnostojace', 2)" class="podgrupa">Świece sojowe wolnostojące</label>
+                
+                <label onclick="show('tealighty', 3)" class="podgrupa">Tealighty i woski do kominka</label></div>
+                
+            <div class='category'>
+                <hr class="fullHr" id="1">
+                <hr class="fullHr" id="2">
+                <hr class="fullHr" id="3">
+                </div>
                 
                 <section id="swieceWSzkle" class="newSection">
                     <div class="cont">
@@ -132,15 +144,15 @@
             <form>
                 <div>
                 <p>Pojemność: </p>
-                <input type="radio" id="Choice1"
-                 name="size" value="200ml">
+                <input type="radio" id="Sloik200"
+                 name="size" value="200ml" checked>
                 <label for="Choice1">200ml</label>
 
-                <input type="radio" id="Choice2"
+                <input type="radio" id="Sloik330"
                  name="size" value="330ml">
                 <label for="Choice2">330ml</label>
 
-                <input type="radio" id="Choice3"
+                <input type="radio" id="Sloik350"
                  name="size" value="350ml">
                 <label for="Choice3">350ml</label>
                     </div>
@@ -209,7 +221,7 @@
                     <option value="Dzewo sandałowe">Dzewo sandałowe</option>
                     <option value="Kawa-czekolada">Kawa-czekolada</option></select>
             </div>
-                <div>Cena: <h2>8</h2>zł</div>
+                <div>Cena: <h2 id="priceSloik">200</h2>zł</div>
             </form>
         </div>
     </div>
@@ -223,25 +235,23 @@
             <form>
                 <div>
                 <p>Pojemność: </p>
-                <input type="radio" id="Choice1"
-                 name="size" value="90ml">
+                <input type="radio" id="inhala90"
+                 name="size" value="90ml" checked>
                 <label for="Choice1">90ml</label>
 
-                <input type="radio" id="Choice2"
+                <input type="radio" id="inhala200"
                  name="size" value="200ml">
                 <label for="Choice2">200ml</label>
                     </div>
                 <div>
                     <label>"INHALA" to mieszanka mięty, eukaliptusa i lawendy.</label>
             </div>
-                <div>Cena: <h2>8</h2>zł</div>
+                <div>Cena: <h2 id="priceInhala">15</h2>zł</div>
             </form>
         </div>
     </div>   
                 </section>
                 
-
-            <label onclick="show('swieceWolnostojace', 2)" class="podgrupa">Świece sojowe wolnostojące</label><hr class="fullHr" id="2">
                 <section id="swieceWolnostojace" class="newSection">
         <div class="cont">
         <h1>Słoń</h1>
@@ -750,8 +760,7 @@
                             
             </section>
     
-            <label onclick="show('tealighty', 3)" class="podgrupa">Tealighty i woski do kominka</label><hr class="fullHr" id="3">
-            <section id="tealighty" class="newSection"> 
+                <section id="tealighty" class="newSection"> 
                  
                     <div class="cont">
         <h1>Tealighty</h1>
@@ -982,7 +991,7 @@
                     <h1><i>Mydła glicerynowe</i></h1><hr>
                 <span class="wstawkaProduktu">Mydła glicerynowe bla bla bla</span>
                 
-          <label onclick="show('mydlaUrocze', 2)" class="podgrupa">Urocze mydła</label><hr class="fullHr" id="2">
+          <label onclick="show('mydlaUrocze', 4)" class="podgrupa">Urocze mydła</label><hr class="fullHr" id="4">
                 <section id="mydlaUrocze" class="newSection">     
                 <div class="cont">
         <h1>Mydane słodkości</h1>

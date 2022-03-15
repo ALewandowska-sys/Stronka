@@ -149,7 +149,7 @@ for(let i=0; i<Carousel.length; i++){
 
 
 
-//pokazanie podgrupy
+//zarzadzanie podgrupa
 
 function show(groupId, nrHr) {
   var elem = document.getElementById(groupId);
@@ -157,25 +157,68 @@ function show(groupId, nrHr) {
     var animHr = document.getElementById(nrHr);
     
   if (foo.getPropertyValue("display") == 'none') {
-    elem.style.display = 'flex';
-      animHr.style.transform = "scaleX(-2)";
+      elem.style.display = 'flex';
+      animHr.style.transform = "scaleX(-1)";
   } else {
     elem.style.display = 'none';
       animHr.style.transform = "scaleX(1)";
   }
 }
 
+let test = document.getElementsByClassName('podgrupa');
+let hr = document.getElementsByClassName('fullHr');
+for(let i=0; i<test.length; i++){
+    test[i].addEventListener("mouseover", () => {
+      hr[i].style.transform = "scaleX(-1)";
+      test[i].style.backgroundImage = "linear-gradient(to left, transparent, #F5F5F5, transparent)";
+        setTimeout(function() {
+            hr[i].style.transform = "";
+            test[i].style.backgroundImage = "";
+        }, 500);
+    }, false);   
+}
+
+
+
+
 //pokazanie ceny
 
+ let result = document.querySelector('#priceSloik');
+    document.body.addEventListener('change', function (e) {
+            let target = e.target;
+            let message;
+            switch (target.id) {
+                case 'Sloik200':
+                    message = '30';
+                    break;
+                case 'Sloik330':
+                    message = '45';
+                    break;
+                case 'Sloik350':
+                    message = '48';
+                    break;
+            }
+            result.textContent = message;
+        });
+ let result1 = document.querySelector('#priceInhala');
+    document.body.addEventListener('change', function (e) {
+            let target = e.target;
+            let message;
+            switch (target.id) {
+                case 'inhala90':
+                    message = '15';
+                    break;
+                case 'inhala200':
+                    message = '30';
+                    break;
+            }
+            result1.textContent = message;
+        });
 /*
+                
 <li>Kula musująca - 9 zł</li>
                         <li>Kula musująca XXL - 21 zł</li>
-                        <li>Kula musująca dla dzieci z niespodzianką w środku - 10 zł</li>
-            <li>Świeca w szklanym słoiku 200 ml - 30 zł</li>
-            <li>Świeca w szklanym słoiku 330 ml - 45 zł</li>
-            <li>Świeca w szklanym słoiku 350 ml - 48 zł</li>       
-            <li>Świeca INHALA 90 ml - 15 zł</li> 
-            <li>Świeca INHALA 200 ml - 30 zł</li>
+                        <li>Kula musująca dla dzieci z niespodzianką w środku - 10 zł</li>      
             <li>Marilyn - 30 zł</li> 
             <li>Martin - 35</li>             
             <li>Audrey - 35 zł </li>
