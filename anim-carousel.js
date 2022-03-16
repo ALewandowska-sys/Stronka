@@ -151,32 +151,41 @@ for(let i=0; i<Carousel.length; i++){
 
 //zarzadzanie podgrupa
 
-function show(groupId, nrHr) {
-  var elem = document.getElementById(groupId);
-  var foo = window.getComputedStyle(elem, null);
-    var animHr = document.getElementById(nrHr);
-    
-  if (foo.getPropertyValue("display") == 'none') {
-      elem.style.display = 'flex';
-      animHr.style.transform = "scaleX(-1)";
-  } else {
-    elem.style.display = 'none';
-      animHr.style.transform = "scaleX(1)";
-  }
-}
 
+let section = document.getElementsByClassName('newSection');
 let test = document.getElementsByClassName('podgrupa');
 let hr = document.getElementsByClassName('fullHr');
 for(let i=0; i<test.length; i++){
+    if(window.getComputedStyle(section[i]).display == 'flex'){
+        test[i].style.backgroundImage = "linear-gradient(to left, transparent, #FFEFD5, transparent)";
+    }
+    test[i].addEventListener("click", () =>{
+        var foo = window.getComputedStyle(section[i], null);  
+        if (foo.getPropertyValue("display") == 'none') {
+          section[i].style.display = 'flex';
+            for(let m=0; m<test.length; m++){
+                if(m === i){
+                    continue;
+                   }else{
+                    section[m].style.display = 'none';
+                    test[m].style.backgroundImage = "";
+                   }
+            }
+        test[i].style.backgroundImage = "linear-gradient(to left, transparent, #FFEFD5, transparent)";
+          hr[i].style.transform = "scaleX(-1)";
+      } else {
+        section[i].style.display = 'none';
+          hr[i].style.transform = "scaleX(1)";
+        test[i].style.backgroundImage = "";
+      }
+    });
     test[i].addEventListener("mouseover", () => {
-      hr[i].style.transform = "scaleX(-1)";
-      test[i].style.backgroundImage = "linear-gradient(to left, transparent, #F5F5F5, transparent)";
-        setTimeout(function() {
-            hr[i].style.transform = "";
-            test[i].style.backgroundImage = "";
-        }, 500);
-    }, false);   
-}
+    hr[i].style.transform = "scaleX(-1)";
+    setTimeout(function() {
+        hr[i].style.transform = "";
+    }, 500);
+}, false);
+}   
 
 
 
