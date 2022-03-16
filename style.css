@@ -564,20 +564,17 @@ input:hover, textarea:hover{
     margin: 0;
     width: 30%;
 }
-#kule, #mydla, #kapiel, #wlosy, #inne{
+.normalSection, #mydla, #swieceWSzkle{
     display: flex;
 }
-.newSection{
+.newSection, .normalSection{
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
     width: 100%;
     margin: 0 0 10% 0;
 }
-#swieceWSzkle{
-    display: flex;
-}
-#swieceWolnostojace, #tealighty, #mydlaUrocze{
+.newSection{
     display: none;
 }
 .wstawkaProduktu{

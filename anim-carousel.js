@@ -68,30 +68,30 @@ for(let i=0; i<Carousel.length; i++){
     }
     if(i ===19){ //serce mus
         pictures = ["zdj/produkty/kule/JPEG/serc6.jpg", "zdj/produkty/kule/JPEG/serc.jpg", "zdj/produkty/kule/JPEG/serc2.jpg", "zdj/produkty/kule/JPEG/serc3.jpg", "zdj/produkty/kule/JPEG/serc4.jpg"];
-    } 
-    if(i ===20){ //babeczki
-        pictures = ["zdj/produkty/mydla/JPEG/bab.jpg", "zdj/produkty/mydla/JPEG/bab1.jpg", "zdj/produkty/mydla/JPEG/bab3.jpg"];
-    }
-    if(i ===21){ //mis
-        pictures = ["zdj/produkty/mydla/JPEG/mis.jpg", "zdj/produkty/mydla/JPEG/mis2.jpg"];
-    }
-    if(i ===22){ //jelonek
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
-    }
-    if(i ===23){ //serce
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
-    }
-    if(i ===24){ //lovka
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
-    }
-    if(i ===25){ //mini
-        pictures = ["zdj/produkty/mydla/JPEG/mini.jpg", "zdj/produkty/mydla/JPEG/mini1.jpg", "zdj/produkty/mydla/JPEG/mini3.jpg", "zdj/produkty/mydla/JPEG/mini4.jpg", "zdj/produkty/mydla/JPEG/mini5.jpg", "zdj/produkty/mydla/JPEG/mino5.jpg"];
-    }                        
-    if(i ===26){ //mydloMas
+    }                         
+    if(i ===20){ //mydloMas
         pictures = ["zdj/produkty/mydla/JPEG/mas.jpg", "zdj/produkty/mydla/JPEG/mas1.jpg", "zdj/produkty/mydla/JPEG/mas2.jpg", "zdj/produkty/mydla/JPEG/mas4.jpg", "zdj/produkty/mydla/JPEG/mas5.jpg", "zdj/produkty/mydla/JPEG/masujace.jpg"];
     }
-    if(i ===27){ //kostka
+    if(i ===21){ //kostka
         pictures = ["zdj/produkty/mydla/JPEG/mydla1.jpg", "zdj/produkty/mydla/JPEG/mydla2.jpg"];
+    }
+    if(i ===22){ //babeczki
+        pictures = ["zdj/produkty/mydla/JPEG/bab.jpg", "zdj/produkty/mydla/JPEG/bab1.jpg", "zdj/produkty/mydla/JPEG/bab3.jpg"];
+    }
+    if(i ===23){ //mis
+        pictures = ["zdj/produkty/mydla/JPEG/mis.jpg", "zdj/produkty/mydla/JPEG/mis2.jpg"];
+    }
+    if(i ===24){ //jelonek
+        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    }
+    if(i ===25){ //serce
+        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    }
+    if(i ===26){ //lovka
+        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    }
+    if(i ===27){ //mini
+        pictures = ["zdj/produkty/mydla/JPEG/mini.jpg", "zdj/produkty/mydla/JPEG/mini1.jpg", "zdj/produkty/mydla/JPEG/mini3.jpg", "zdj/produkty/mydla/JPEG/mini4.jpg", "zdj/produkty/mydla/JPEG/mini5.jpg", "zdj/produkty/mydla/JPEG/mino5.jpg"];
     }
     if(i ===28){ //sol
         pictures = ["zdj/produkty/p+s/JPEG/sol3.jpg", "zdj/produkty/p+s/JPEG/sol.jpg", "zdj/produkty/p+s/JPEG/sol2.jpg", "zdj/produkty/p+s/JPEG/sol4.jpg", "zdj/produkty/p+s/JPEG/sol5.jpg", "zdj/produkty/p+s/JPEG/sol6.jpg"];
