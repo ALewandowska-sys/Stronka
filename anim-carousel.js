@@ -155,21 +155,38 @@ for(let i=0; i<Carousel.length; i++){
 let section = document.getElementsByClassName('newSection');
 let test = document.getElementsByClassName('podgrupa');
 let hr = document.getElementsByClassName('fullHr');
+
 for(let i=0; i<test.length; i++){
     if(window.getComputedStyle(section[i]).display == 'flex'){
         test[i].style.backgroundImage = "linear-gradient(to left, transparent, #FFEFD5, transparent)";
     }
     test[i].addEventListener("click", () =>{
-        var foo = window.getComputedStyle(section[i], null);  
+        var foo = window.getComputedStyle(section[i], null);
+        
         if (foo.getPropertyValue("display") == 'none') {
           section[i].style.display = 'flex';
-            for(let m=0; m<test.length; m++){
-                if(m === i){
-                    continue;
+            if(i<3){
+                for(let m=0; m<3; m++){
+                    if(m === i){
+                        continue;
                    }else{
-                    section[m].style.display = 'none';
-                    test[m].style.backgroundImage = "";
+                        section[m].style.display = 'none';
+                        test[m].style.backgroundImage = "";
                    }
+                }
+            }else{
+                for(let m=0; m<test.length; m++){
+                    if(m === i){
+                        continue;
+                   }
+                    if(m===0){
+                        section[0].style.display = 'flex';
+                        test[0].style.backgroundImage = "linear-gradient(to left, transparent, #FFEFD5, transparent)";
+                    }else{
+                        section[m].style.display = 'none';
+                        test[m].style.backgroundImage = "";
+                   }
+            }
             }
         test[i].style.backgroundImage = "linear-gradient(to left, transparent, #FFEFD5, transparent)";
           hr[i].style.transform = "scaleX(-1)";
@@ -185,78 +202,100 @@ for(let i=0; i<test.length; i++){
         hr[i].style.transform = "";
     }, 500);
 }, false);
-}   
+} 
 
 
 
 
 //pokazanie ceny
 
- let result = document.querySelector('#priceSloik');
+
     document.body.addEventListener('change', function (e) {
             let target = e.target;
-            let message;
             switch (target.id) {
                 case 'Sloik200':
-                    message = '30';
+                    document.querySelector('#priceSloik').textContent = '30';
                     break;
                 case 'Sloik330':
-                    message = '45';
+                    document.querySelector('#priceSloik').textContent = '45';
                     break;
                 case 'Sloik350':
-                    message = '48';
+                    document.querySelector('#priceSloik').textContent = '48';
                     break;
-            }
-            result.textContent = message;
-        });
- let result1 = document.querySelector('#priceInhala');
-    document.body.addEventListener('change', function (e) {
-            let target = e.target;
-            let message;
-            switch (target.id) {
                 case 'inhala90':
-                    message = '15';
+                document.querySelector('#priceInhala').textContent = '15';
                     break;
                 case 'inhala200':
-                    message = '30';
+                document.querySelector('#priceInhala').textContent = '30';
+                    break;
+                case 'Marilyn':
+                    document.querySelector('#priceMM').textContent = '30';
+                    break;
+                case 'Martin':
+                    document.querySelector('#priceMM').textContent = '35';
+                    break;
+                case 'RazemMM':
+                    document.querySelector('#priceMM').textContent = '50';
+                    break;                
+                case 'Audrey':
+                    document.querySelector('#priceJA').textContent = '35';
+                    break;                
+                case 'Joe':
+                    document.querySelector('#priceJA').textContent = '35';
+                    break;                
+                case 'RazemJA':
+                    document.querySelector('#priceJA').textContent = '55';
+                    break;                
+                case 'sol50':
+                    document.querySelector('#priceSol').textContent = '5';
+                    break;                  
+                case 'sol100':
+                    document.querySelector('#priceSol').textContent = '7';
+                    break;                 
+                case 'sol150':
+                    document.querySelector('#priceSol').textContent = '15';
+                    break;                 
+                case 'sol500':
+                    document.querySelector('#priceSol').textContent = '35';
+                    break;                  
+                case 'puder50':
+                    document.querySelector('#pricePuder').textContent = '5';
+                    break;                   
+                case 'puder100':
+                    document.querySelector('#pricePuder').textContent = '10';
+                    break;                   
+                case 'puder150':
+                    document.querySelector('#pricePuder').textContent = '15';
+                    break;
+                case 'frotkaKokarda': 
+                    document.querySelector('#priceFrotka').textContent = '18';
+                    break;
+                case 'frotkaKlasyczna':
+                    document.querySelector('#priceFrotka').textContent = '15';
+                    break;
+                case 'kulaKlasyczna':
+                    document.querySelector('#priceKula').textContent = '9';
+                    break;
+                case 'kulaXXL':
+                    document.querySelector('#priceKula').textContent = '21';
+                    break;
+                case 'kulaNiespodzianka':
+                    document.querySelector('#priceKula').textContent = '10';
+                    break;
+                case 'kostkaDuza':
+                    document.querySelector('#priceKostka').textContent = '14';
+                    break;
+                case 'kostkaMala':
+                    document.querySelector('#priceKostka').textContent = '9';
+                    break;
+                case 'babeczka':
+                    document.querySelector('#priceMuffinki').textContent = '10';
+                    break;
+                case 'muffinka':
+                    document.querySelector('#priceMuffinki').textContent = '15';
+                    break;
+                case '3xmuffinki':
+                    document.querySelector('#priceMuffinki').textContent = '35';
                     break;
             }
-            result1.textContent = message;
         });
-/*
-                
-<li>Kula musująca - 9 zł</li>
-                        <li>Kula musująca XXL - 21 zł</li>
-                        <li>Kula musująca dla dzieci z niespodzianką w środku - 10 zł</li>      
-            <li>Marilyn - 30 zł</li> 
-            <li>Martin - 35</li>             
-            <li>Audrey - 35 zł </li>
-            <li>Joe - 35 zł</li> 
-            <li>Emily - 33 zł</li>  
-            <li>Marilyn&#38Martin w zestawie - 50 zł</li>
-            <li>Andrey&#38Joe w zestawie - 55 zł</li>
-            <li>Kaktus Kajtek - 15 zł</li>
-            <li>Rubi - 20 zł</li> 
-            <li>Różyczka - 7 z</li>
-            <li>Opona - 8 zł</li> 
-            <li>Sowa - 10 zł</li> 
-            <li>Zając wielkanocny - 10 zł</li>
-            
-                        <ul><li>Mydło do rąk duże - 14 zł</li>
-                        <li>Mydło do rąk małe - 9 zł</li></ul>
-                        <ul><li>Mydlaną babeczka - 10 zł</li>
-                        <li>Mydlane muffiny - 15 zł</li>
-                        <li>3 sztuki mydlanych muffin - 35 zł</li></ul>
-                        
-                    <li>Sól do kąpieli 50 g (w szklanej probówce) - 5 zł</li>
-                    <li>Sól do kąpieli 100 g (w papierowej torebce) - 7 zł</li>
-                    <li>Sól do kąpieli 150 g (w szklanej butelce) - 15 zł</li>
-                    <li>Sól do kąpieli 500 g (w szklanej butelce) - 35 zł</li>
-                    <li>Puder do kąpieli 150 g - 15 zł</li>
-                    <li>Puder do kąpieli 100 g - 10 zł</li>
-                    <li>Puder do kąpieli 50 g - 5 zł</li>
-                    
-                    <li>Frotka klasyczna - 15 zł</li>
-                    <li>Frotka ze wskążką - 18 zł</li>
-            
-*/
