@@ -115,12 +115,15 @@ header a{
         display: none;
     }
     #current-option-text1{
-        width: 30%;
+        width: 40%;
         display: flex;
         justify-content: center;
     }
     #current-option-text2{  
         top: 10vw;
+    }
+    #current-option{
+        justify-content: center;
     }
     
     /*o nas*/
@@ -141,7 +144,8 @@ header a{
     
     /*produkty*/
     .wstawkaProduktu{
-        font-size: 1.5vw;
+        font-size: 1.2rem;
+        margin: 10%;
     }
 }
 
@@ -207,6 +211,12 @@ header a{
     #current-option-text2{  
         top: 25vw;
     }
+    #current-option{
+        justify-content: space-evenly;
+    }
+    #image{
+        margin: 0;
+    }
     .left, .right, .kwiatekPrawy, .kwiatekLewy, .name{
         display: none;
     }
@@ -221,7 +231,8 @@ header a{
         padding: 0;
     }
     .wstawkaProduktu{
-        font-size: 2.75vw;
+        font-size: .8rem;
+        margin: 10% 0;
     }
     
     /*o nas*/
@@ -241,6 +252,11 @@ header a{
     }
     .wstawka, .circle{
         display: none;
+    }
+}
+@media (max-width:500px){
+    .produkty form div{
+        flex-wrap: wrap;
     }
 }
 
@@ -299,11 +315,11 @@ section{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
 }
 #current-option-text1 {
   font-size: 20px;
+    margin: 5% 0;
   line-height: 2rem;
 }
 #current-option-text1::before {
@@ -323,7 +339,6 @@ section{
 #current-option-text2 {
     display: block;
     padding: 10px;
-    width: 100%;
     text-align: center;
   font-size: 2rem;
   height: 40px;
@@ -333,12 +348,12 @@ section{
 #image {
   height: 300px;
   width: 300px;
-    margin-left: 0;
+    margin: 3% 5%;
     background-size: cover;
     border-radius: 25%;
   z-index: 3;
 }
-.arrows{
+.arrow{
   width: 2rem;
   height: 2rem;
   border: none;
@@ -347,15 +362,16 @@ section{
   cursor: pointer;
   background: url("zdj/next.png");
   background-size: cover;
-    position: relative;
-    margin-right: 470px;
-    top: -170px;
+}
+.arrows{
+    margin: 1%;
 }
 #previous-option {
-  transform: translate(400px, 50px) rotate(90deg);
+  transform: rotate(270deg);
+    margin-bottom: 50px;
 }
 #next-option {
-  transform: translate(400px, -50px) rotate(270deg);
+  transform: rotate(90deg);
 }
 
 .anim-next, .anim-previous {
@@ -420,6 +436,7 @@ section{
 }
 
 .icons{
+    margin: 5%;
     display: flex;
     align-content: center;
 }
@@ -427,13 +444,15 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin: 5% 2% 0 2%;
 }
 .icon img{
+    margin-right: 10px;
     width: 70px;
     height: 70px;
 }
 .icon p{
+    text-align: left;
     font-size: 15px;
 }
 .komentarze img{
@@ -445,6 +464,11 @@ section{
 }
 .komentarze img:hover{
     background-color: #C9B0B0;
+}
+iframe{
+    height: 250px;
+    max-width: 100%;
+    width: 400px;
 }
 .odAutora p{
     display: inline-flex;
@@ -585,40 +609,39 @@ input:hover, textarea:hover{
 .wstawkaProduktu{
     display: block;
     font-style: italic;
-    margin: 5% 10%;
 }
-.produkty img{
+.carousel{
     width: 300px;
-    height: 300px;
+    max-width: 80%;
 }
 .fullHr{
+    min-width: 100px;
     margin: 0;
     width: 30%;
     height: 2px;
     transition: transform 2s;
 }
 .container {
-    width: 400px;
+    max-width: 100%;
+    min-height: 400px;
+    width: 380px;
     height: 500px;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.2);
 }
 .cont h1{
+    text-align: center;
     display: block;
     margin: 0;
 }
 .cont{
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 4% 1%;
-}
-.container img {
-    z-index: -2;
-    margin-top: 15px;
 }
 .produkty form input{
     margin-left: 5%;
@@ -630,9 +653,14 @@ input:hover, textarea:hover{
     margin: 0 0 0 5%;
 }
 .produkty form div{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin: 0 0 .5rem 0;
+}
+.imgAndBtn{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
 }
 .left-btn img, .right-btn img{
     width: 30px;
@@ -644,25 +672,18 @@ input:hover, textarea:hover{
 }
 .left-btn, .right-btn {
     z-index: 10;
+    min-width: 5px;
     padding: 20px 20px 20px 0;
     border: none;
     background-size: cover;
     cursor: pointer;
-    display: flex;
-    align-items: center;
     transition: background-color 1s;
 }
 .left-btn:hover, .right-btn:hover{
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .right-btn {
-    margin: 30% 0 auto 0;
     transform: rotate(180deg);
-}
-
-.left-btn {
-    margin: 30% 0 auto 0;
 }
 
 /*-----------------------dol-------------------*/
