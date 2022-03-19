@@ -145,7 +145,7 @@ header a{
     /*produkty*/
     .wstawkaProduktu{
         font-size: 1.2rem;
-        margin: 10%;
+        margin: 8%;
     }
 }
 
@@ -579,10 +579,10 @@ input:hover, textarea:hover{
     padding: 0;
 }
 .produkty{
-    padding-top: 5%;
+    padding-top: 0;
 }
 .produkty h1{
-    margin-top: 10%;
+    padding-top: 10%;
 }
 .category{
     display: flex;
@@ -593,7 +593,7 @@ input:hover, textarea:hover{
     margin: 0;
     width: 30%;
 }
-.normalSection, #mydla, #swieceWSzkle{
+.normalSection, #mydlaKlasyczne, #swieceWSzkle{
     display: flex;
 }
 .newSection, .normalSection{
