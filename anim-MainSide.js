@@ -22,7 +22,7 @@ const text2_options = [
 ];
 const color_options = ["#E5D3D3", "#DECDE6", "#F6CED2", "#EBE9CD", "#DCD6DC", "#C1F3CF", "#FFE5CC", "#FADDF3"];
 const image_options = [
-    "zdj/produkty/p+s/JPEG/puder3.jpg",
+    "zdj/produkty/p+s/JPEG/puder.jpg",
     "zdj/produkty/swiece/JPEG/inhala1.jpg",
   "zdj/produkty/kule/JPEG/serc.jpg",
   "zdj/produkty/mydla/JPEG/masujace.jpg",
@@ -31,6 +31,7 @@ const image_options = [
   "zdj/produkty/swiece/JPEG/men3.jpg",
     "zdj/produkty/p+s/JPEG/sol3.jpg"
 ];
+
 var i = 0;
 const currentOptionText1 = document.getElementById("current-option-text1");
 const currentOptionText2 = document.getElementById("current-option-text2");

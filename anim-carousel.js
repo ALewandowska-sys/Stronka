@@ -8,14 +8,14 @@ const left = document.getElementsByClassName('left-btn');
 for(let i=0; i<Carousel.length; i++){
     
     let pictures;
-    if(i===0){  //szklany pucharek
+    if(i ===0){  //szklany pucharek
         pictures = ["zdj/produkty/swiece/JPEG/sloik.jpg", "zdj/produkty/swiece/JPEG/sloik2.jpg", "zdj/produkty/swiece/JPEG/szklane.jpg", "zdj/produkty/swiece/JPEG/szklane2.jpg", "zdj/produkty/swiece/JPEG/pucharek.jpg", "zdj/produkty/swiece/JPEG/pucharek1.jpg"];
     }
     if(i ===1){ //sloik
-        pictures = ["zdj/produkty/swiece/JPEG/inhala.jpg", "zdj/produkty/swiece/JPEG/inhala1.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/sloiki.jpg"];
     }
     if(i ===2){ //inhala
-        pictures = ["zdj/produkty/swiece/JPEG/inhala.jpg", "zdj/produkty/swiece/JPEG/inhala1.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/inhala.jpg", "zdj/produkty/swiece/JPEG/inhala1.jpg", "zdj/produkty/swiece/JPEG/inhala2.jpg"];
     }
     if(i ===3){ //slon
         pictures = ["zdj/produkty/swiece/JPEG/slon.jpg", "zdj/produkty/swiece/JPEG/slon5.jpg", "zdj/produkty/swiece/JPEG/slon1.jpg"];
@@ -30,41 +30,40 @@ for(let i=0; i<Carousel.length; i++){
         pictures = ["zdj/produkty/swiece/JPEG/para3.jpg", "zdj/produkty/swiece/JPEG/para2.jpg", "zdj/produkty/swiece/JPEG/para.jpg"];
     }
     if(i ===7){ //m&m
-        pictures = ["zdj/produkty/swiece/JPEG/body2.jpg", "zdj/produkty/swiece/JPEG/kob.jpg", "zdj/produkty/swiece/JPEG/kob1.jpg", "zdj/produkty/swiece/JPEG/kob2.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/body2.jpg", "zdj/produkty/swiece/JPEG/kob.jpg", "zdj/produkty/swiece/JPEG/kob1.jpg", "zdj/produkty/swiece/JPEG/kob2.jpg", "zdj/produkty/swiece/JPEG/meen.jpg"];
     }
     if(i ===8){ //a&j
         pictures = ["zdj/produkty/swiece/JPEG/bodyrazem.jpg", "zdj/produkty/swiece/JPEG/women.jpg", "zdj/produkty/swiece/JPEG/women1.jpg", "zdj/produkty/swiece/JPEG/men.jpg", "zdj/produkty/swiece/JPEG/men1.jpg", "zdj/produkty/swiece/JPEG/men3.jpg"];
     }
     if(i ===9){ //emily
-        pictures = ["zdj/produkty/swiece/JPEG/body1.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/body1.jpg", "zdj/produkty/swiece/JPEG/emily2.jpg", "zdj/produkty/swiece/JPEG/emily.jpg"];
     }
-    if(i ===10){    //kaktus
-        pictures = ["zdj/produkty/swiece/JPEG/kaktus1.jpg", "zdj/produkty/swiece/JPEG/kaktus.jpg", "zdj/produkty/swiece/JPEG/c.jpg", "zdj/produkty/swiece/JPEG/c2.jpg", "zdj/produkty/swiece/JPEG/opony.jpg", "zdj/produkty/swiece/JPEG/opona1.jpg", "zdj/produkty/swiece/JPEG/krolik2.jpg", "zdj/produkty/swiece/JPEG/krolik3.jpg", "zdj/produkty/swiece/JPEG/krolik4.jpg"];
+    if(i ===10){  //kaktus
+        pictures = ["zdj/produkty/swiece/JPEG/kaktus1.jpg", "zdj/produkty/swiece/JPEG/kaktus.jpg"];
     }
-    
     if(i ===11){ //rubi
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/c.jpg", "zdj/produkty/swiece/JPEG/c2.jpg", "zdj/produkty/swiece/JPEG/rubi.jpg", "zdj/produkty/swiece/JPEG/rubi2.jpg"];
     }
     if(i ===12){ //rozyczka
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/rozyczka.png"];
     }
     if(i ===13){ //opona
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/opona1.jpg", "zdj/produkty/swiece/JPEG/opony.jpg"];
     }
     if(i ===14){ //sowa
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/sowa.png"];
     }
     if(i ===15){ //zajac
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/krolik2.jpg", "zdj/produkty/swiece/JPEG/krolik3.jpg", "zdj/produkty/swiece/JPEG/krolik4.jpg"];
     }
     if(i ===16){ //tealighty
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/tealighty.jpg", "zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tea.jpg", "zdj/produkty/swiece/JPEG/tea1.jpg"];
     }
     if(i ===17){ //woski
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+        pictures = ["zdj/produkty/swiece/JPEG/wosk1.jpg", "zdj/produkty/swiece/JPEG/wosk.jpg", "zdj/produkty/swiece/JPEG/wosk2.jpg", "zdj/produkty/swiece/JPEG/woskP.jpg", "zdj/produkty/swiece/JPEG/woskP1.jpg"];
     }
     if(i ===18){ //kula mus
-        pictures = ["zdj/produkty/kule/JPEG/kwiatek1.jpg", "zdj/produkty/kule/JPEG/kula.jpg", "zdj/produkty/kule/JPEG/kula2.jpg", "zdj/produkty/kule/JPEG/kula3.jpg", "zdj/produkty/kule/JPEG/kuleS.jpg", "zdj/produkty/kule/JPEG/kwiatek.jpg", "zdj/produkty/kule/JPEG/kwitek1.jpg"];
+        pictures = ["zdj/produkty/kule/JPEG/kula.jpg", "zdj/produkty/kule/JPEG/kwiatek1.jpg", "zdj/produkty/kule/JPEG/kula2.jpg", "zdj/produkty/kule/JPEG/kula3.jpg", "zdj/produkty/kule/JPEG/kulaN.jpg", "zdj/produkty/kule/JPEG/kuleS.jpg", "zdj/produkty/kule/JPEG/kwiatek.jpg", "zdj/produkty/kule/JPEG/kwitek1.jpg"];
     }
     if(i ===19){ //serce mus
         pictures = ["zdj/produkty/kule/JPEG/serc6.jpg", "zdj/produkty/kule/JPEG/serc.jpg", "zdj/produkty/kule/JPEG/serc2.jpg", "zdj/produkty/kule/JPEG/serc3.jpg", "zdj/produkty/kule/JPEG/serc4.jpg"];
@@ -72,40 +71,43 @@ for(let i=0; i<Carousel.length; i++){
     if(i ===20){ //mydloMas
         pictures = ["zdj/produkty/mydla/JPEG/mas.jpg", "zdj/produkty/mydla/JPEG/mas1.jpg", "zdj/produkty/mydla/JPEG/mas2.jpg", "zdj/produkty/mydla/JPEG/mas4.jpg", "zdj/produkty/mydla/JPEG/mas5.jpg", "zdj/produkty/mydla/JPEG/masujace.jpg"];
     }
-    if(i ===21){ //kostka
-        pictures = ["zdj/produkty/mydla/JPEG/mydla1.jpg", "zdj/produkty/mydla/JPEG/mydla2.jpg"];
+    if(i ===21){ //lovka
+        pictures = ["zdj/produkty/mydla/JPEG/lovka.jpg"];
     }
-    if(i ===22){ //babeczki
-        pictures = ["zdj/produkty/mydla/JPEG/bab.jpg", "zdj/produkty/mydla/JPEG/bab1.jpg", "zdj/produkty/mydla/JPEG/bab3.jpg"];
+    if(i ===22){ //kostka
+        pictures = ["zdj/produkty/mydla/JPEG/kostkiii.png", "zdj/produkty/mydla/JPEG/mydla1.jpg", "zdj/produkty/mydla/JPEG/kostka12.png", "zdj/produkty/mydla/JPEG/kostki.png", "zdj/produkty/mydla/JPEG/kostka11.png", "zdj/produkty/mydla/JPEG/mydla2.jpg"];
     }
-    if(i ===23){ //mis
+    if(i ===23){ //babeczki
+        pictures = ["zdj/produkty/mydla/JPEG/muff1.png", "zdj/produkty/mydla/JPEG/muff.png", "zdj/produkty/mydla/JPEG/muffinka.png", "zdj/produkty/mydla/JPEG/bab3.jpg", "zdj/produkty/mydla/JPEG/bab1.jpg", "zdj/produkty/mydla/JPEG/razem.png"];
+    }
+    if(i ===24){ //mis
         pictures = ["zdj/produkty/mydla/JPEG/mis.jpg", "zdj/produkty/mydla/JPEG/mis2.jpg"];
     }
-    if(i ===24){ //jelonek
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    if(i ===25){ //jelonek
+        pictures = ["zdj/produkty/mydla/JPEG/jelonek.png", "zdj/produkty/mydla/JPEG/jelonek1.png", "zdj/produkty/mydla/JPEG/jelonek2.png"];
     }
-    if(i ===25){ //serce
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    if(i ===26){ //serce
+        pictures = ["zdj/produkty/mydla/JPEG/serca.png", "zdj/produkty/mydla/JPEG/serceD.png"];
     }
-    if(i ===26){ //lovka
-        pictures = ["zdj/produkty/swiece/JPEG/tealig.jpg", "zdj/produkty/swiece/JPEG/tealighty.jpg"];
+    if(i ===27){ //miod
+        pictures = ["zdj/produkty/mydla/JPEG/moid2.jpg", "zdj/produkty/mydla/JPEG/moid.jpg"];
     }
-    if(i ===27){ //mini
+    if(i ===28){ //mini
         pictures = ["zdj/produkty/mydla/JPEG/mini.jpg", "zdj/produkty/mydla/JPEG/mini1.jpg", "zdj/produkty/mydla/JPEG/mini3.jpg", "zdj/produkty/mydla/JPEG/mini4.jpg", "zdj/produkty/mydla/JPEG/mini5.jpg", "zdj/produkty/mydla/JPEG/mino5.jpg"];
     }
-    if(i ===28){ //sol
-        pictures = ["zdj/produkty/p+s/JPEG/sol3.jpg", "zdj/produkty/p+s/JPEG/sol.jpg", "zdj/produkty/p+s/JPEG/sol2.jpg", "zdj/produkty/p+s/JPEG/sol4.jpg", "zdj/produkty/p+s/JPEG/sol5.jpg", "zdj/produkty/p+s/JPEG/sol6.jpg"];
+    if(i ===29){ //sol
+        pictures = ["zdj/produkty/p+s/JPEG/sol3.jpg", "zdj/produkty/p+s/JPEG/sol.jpg", "zdj/produkty/p+s/JPEG/sol2.jpg", "zdj/produkty/p+s/JPEG/sol5.jpg", "zdj/produkty/p+s/JPEG/sol6.jpg", "zdj/produkty/p+s/JPEG/sol4.jpg"];
     }
-    if(i ===29){ //puder
+    if(i ===30){ //puder
         pictures = ["zdj/produkty/p+s/JPEG/puder.jpg", "zdj/produkty/p+s/JPEG/puder3.jpg", "zdj/produkty/p+s/JPEG/puder2.jpg" ];
     }
-    if(i ===30){ //frotka
+    if(i ===31){ //frotka
         pictures = ["zdj/produkty/wlosy/JPEG/frotka.jpg", "zdj/produkty/wlosy/JPEG/wlosy.jpg", "zdj/produkty/wlosy/JPEG/wlosy2.jpg", "zdj/produkty/wlosy/JPEG/wlosy3.jpg", "zdj/produkty/wlosy/JPEG/wlosy4.jpg", "zdj/produkty/wlosy/JPEG/wlosy5.jpg", "zdj/produkty/wlosy/JPEG/losy6.jpg"];
     }
-    if(i ===31){ //opaska
-        pictures = ["zdj/produkty/wlosy/JPEG/opaski.jpg"];
+    if(i ===32){ //opaska
+        pictures = ["zdj/produkty/wlosy/JPEG/opaski.jpg", "zdj/produkty/wlosy/JPEG/opaski1.jpg"];
     }
-    if(i ===32){ //podkladka
+    if(i ===33){ //podkladka
         pictures = ["zdj/produkty/inne/JPEG/duzo.jpg", "zdj/produkty/inne/JPEG/1.jpg", "zdj/produkty/inne/JPEG/cos.jpg", "zdj/produkty/inne/JPEG/jasz.jpg", "zdj/produkty/inne/JPEG/kwiat.jpg", "zdj/produkty/inne/JPEG/pajak.jpg", "zdj/produkty/inne/JPEG/pozdr.jpg", "zdj/produkty/inne/JPEG/slon.jpg", "zdj/produkty/inne/JPEG/wzor.jpg"];
     }
 
@@ -143,9 +145,6 @@ for(let i=0; i<Carousel.length; i++){
     leftBtn.addEventListener("click", moveLeft);
 
 }
-
-
-
 
 
 
